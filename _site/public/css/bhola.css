@@ -48,7 +48,7 @@ html {
   font-size: 4vw;
   font-weight: bold;
   color: #fff;
-  background-image: url("/public/images/Header.webp");
+  background-image: url("https://rajeshbhola.github.io/bholacodecamp/public/images/Header.webp");
   background-size: cover;
   background-position: center;
   padding: 2vw;
