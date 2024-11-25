@@ -1,23 +1,24 @@
----
-layout: page
-# The Category layout
----
-
-<div id="page-category">
-  <h1 class="ps-lg-2">
-    <i class="far fa-folder-open fa-fw text-muted"></i>
-    {{ page.title }}
-    <span class="lead text-muted ps-2">{{ page.posts | size }}</span>
-  </h1>
-  <br />
-
-  <ol class="ps-0 posts">
-    {% for post in page.posts %}
-    <li class="archives-item">
-      <a href="{{ post.url | relative_url }}" class="archive-link"
-        ><b>{{ post.title }}</b></a
-      >
-    </li>
-    {% endfor %}
-  </ol>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }}</title>
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css">
+</head>
+<body>
+  <header>
+    <h1>{{ page.title }}</h1>
+  </header>
+  <main>
+    <ul>
+      {% for post in page.posts %}
+        <li>
+          <a href="{{ post.url }}">{{ post.title }}</a>
+          <p>{{ post.date | date: "%B %d, %Y" }}</p>
+        </li>
+      {% endfor %}
+    </ul>
+  </main>
+</body>
+</html>
