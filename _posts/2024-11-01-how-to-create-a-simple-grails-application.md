@@ -4,7 +4,7 @@ title: "How to create a simple grails application"
 date: 2024-11-01
 categories: [Grails]
 tags: [Basics, Beginner, Simple Application]
-images: ["{{site.url}}/public/images/2.webp"]
+images: ["bholacodecamp/public/images/2.webp"]
 ---
 
 {% include post-header.html
