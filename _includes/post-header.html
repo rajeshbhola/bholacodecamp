@@ -1,0 +1,30 @@
+<div>
+  <h1>{{ page.title }}</h1>
+  <a href="{{ site.github.repo }}" class="custom-badge">
+    <div class="created-by-container">
+      <div class="created-text">Written By</div>
+      <div class="name"><i class="fas fa-user"></i>&nbsp;Rajesh Bhola</div>
+    </div>
+  </a>
+  
+  <a href="{{ include.page_category }}">
+    <div class="created-by-container">
+        {% if include.page_category == '/categories/grails' %}
+            <div class="name" style="background-color: #feb571; color: rgb(255, 255, 255);"><i class="fas fa-folder"></i>&nbsp;Grails</div>
+        {% elsif include.page_category == '/categories/java' %}
+            <div class="name" style="background-color: rgb(91, 155, 213);">Java</div>
+        {% elsif include.page_category == '/categories/kafka' %}
+            <div class="name" style="background-color: rgb(255, 87, 34);">Kafka</div>
+        {% else %}
+            <div class="name" style="background-color: rgb(192, 192, 192);">Other</div>
+        {% endif %}
+    </div>
+</a>
+<br><br>
+
+  <img
+    src="{{ page.images[0] }}"
+    alt="{{ page.title }}"
+    class="post-image1"
+  />
+</div>

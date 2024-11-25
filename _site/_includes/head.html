@@ -1,0 +1,67 @@
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+  <!-- Enable responsiveness on mobile devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
+
+
+  <title>
+    {% if page.title == "Home" %} {{ site.title }} &middot; {{ site.tagline }}
+    {% else %} {{ page.title }} &middot; {{ site.title }} {% endif %}
+  </title>
+
+  <!-- Open Graph Meta Tags -->
+  <meta
+    property="og:title"
+    content="{% if page.og_title %}{{ page.og_title }}{% else %}{{ page.title }}{% endif %}"
+  />
+  <meta
+    property="og:description"
+    content="{% if page.og_description %}{{ page.og_description }}{% else %}{{ site.description }}{% endif %}"
+  />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="{{ page.url | absolute_url }}" />
+  <meta
+    property="og:image"
+    content="{% if page.og_image %}{{ page.og_image | absolute_url }}{% else %}{{ '/public/hard-hat-solid.ico' | absolute_url }}{% endif %}"
+  />
+
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta
+    name="twitter:title"
+    content="{% if page.og_title %}{{ page.og_title }}{% else %}{{ page.title }}{% endif %}"
+  />
+  <meta
+    name="twitter:description"
+    content="{% if page.og_description %}{{ page.og_description }}{% else %}{{ site.description }}{% endif %}"
+  />
+  <meta
+    property="og:image"
+    content="{% if page.og_image %}{{ page.og_image | absolute_url }}{% else %}{{ '/public/hard-hat-solid.ico' | absolute_url }}{% endif %}"
+  />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="{{ site.baseurl }}public/css/rajesh.css" />
+  <link rel="stylesheet" href="{{ site.baseurl }}public/css/syntax.css" />
+  <link rel="stylesheet" href="{{ site.baseurl }}public/css/bhola.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    rel="stylesheet"
+  />
+
+  <!-- Icons -->
+
+  <link
+    rel="icon"
+    href="{{ site.baseurl }}public/images/logo.webp"
+    type="image/x-icon"
+  />
+</head>

@@ -1,0 +1,44 @@
+---
+layout: page
+title: Blogs
+# The Archives of posts.
+---
+
+
+
+<div id="archives" class="pl-xl-3">
+  <h1>All Blogs</h1><br>
+  {% assign last_year = nil %}
+  {% for post in site.posts %}
+    {% assign cur_year = post.date | date: '%Y' %}
+
+    {% if cur_year != last_year %}
+      {% unless forloop.first %}</div>{% endunless %}
+      <div class="year-group">
+        <time class="year lead d-block"><b>{{ cur_year }}</b></time>
+    {% assign last_year = cur_year %}
+    {% endif %}
+
+    <a href="{{ post.url | relative_url }}" class="post-link">
+      <div class="post post1 card">
+        <img src="{{ post.images }}" alt="{{ post.title }}" class="post-image" />
+        <div class="post-content">
+          <h3 class="post-title h1-size">{{ post.title }}</h3>
+          <span class="post-date">{{ post.date | date: "%B %d, %Y" }}</span>
+          <img
+          src="https://img.shields.io/badge/Written By-Rajesh Bhola-white"
+          alt="Rajesh Bhola"
+          height="20"
+          arial-label="Learn More" />
+          <img
+          src="https://img.shields.io/badge/Grails-orange"
+          alt="Grails"
+          height="20"
+        />
+        </div>
+      </div>
+    </a>
+
+    {% if forloop.last %}</div>{% endif %}
+  {% endfor %}
+</div>

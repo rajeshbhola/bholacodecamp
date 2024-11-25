@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+  <!-- Enable responsiveness on mobile devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
+
+
+  <title>
+     How to create a simple grails application &middot; bholaCodeCamp 
+  </title>
+
+  <!-- Open Graph Meta Tags -->
+  <meta
+    property="og:title"
+    content="How to create a simple grails application"
+  />
+  <meta
+    property="og:description"
+    content="Take up one idea. Make that one idea your life - think of it, dream of it, live on that idea, and just leave every other idea alone."
+  />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="http://localhost:4000/grails/2024/11/01/how-to-create-a-simple-grails-application/" />
+  <meta
+    property="og:image"
+    content="http://localhost:4000/public/hard-hat-solid.ico"
+  />
+
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta
+    name="twitter:title"
+    content="How to create a simple grails application"
+  />
+  <meta
+    name="twitter:description"
+    content="Take up one idea. Make that one idea your life - think of it, dream of it, live on that idea, and just leave every other idea alone."
+  />
+  <meta
+    property="og:image"
+    content="http://localhost:4000/public/hard-hat-solid.ico"
+  />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/rajesh.css" />
+  <link rel="stylesheet" href="/public/css/syntax.css" />
+  <link rel="stylesheet" href="/public/css/bhola.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    rel="stylesheet"
+  />
+
+  <!-- Icons -->
+
+  <link
+    rel="icon"
+    href="/public/images/logo.webp"
+    type="image/x-icon"
+  />
+</head>
+
+
+  <body">
+
+    <!-- Loading Spinner with Logo -->
+    <div id="loading-spinner">
+      <div class="spinner-container">
+        <img src="/public/3.png" alt="bholaCodeCamp logo"  height="180" /> 
+          <div class="spinner"></div>
+      </div>
+    </div>
+
+    <div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <div>
+        <a
+          style="display: flex; justify-content: center; color: #ffde59;margin-top: 10px;"
+          href="/"
+          arial-label="Learn More"
+          ><img src="/public/images/logo.webp" alt="bholaCodeCamp logo"  height="120" /></a>
+      </div>
+      <h1 class="fira-code-h1">
+        <a href="/" arial-label="Learn More">
+          bholaCodeCamp
+        </a>
+      </h1>
+      <a href="https://github.com/rajeshbhola?tab=repositories">
+        <img
+          src="https://img.shields.io/badge/Created By-Rajesh Bhola-yellow"
+          alt="Rajesh Bhola"
+          height="32"
+          arial-label="Learn More"
+        /> </a
+      ><br>
+      <small style="color: rgb(161, 161, 161)">Take up one idea. Make that one idea your life - think of it, dream of it, live on that idea, and just leave every other idea alone.</small>
+    </div>
+    <hr>
+    <nav class="sidebar-nav">
+      <a
+        class="sidebar-nav-item"
+        href="/"
+        >Home</a
+      >
+
+             
+      <a
+        class="sidebar-nav-item"
+        href="/about/"
+        >About Me</a
+      >
+          
+      <a
+        class="sidebar-nav-item"
+        href="/blogs/"
+        >Blogs</a
+      >
+                  
+      <a
+        class="sidebar-nav-item"
+        href="/privacy-policy/"
+        >Privacy Policy</a
+      >
+                              
+    </nav>
+  </div>
+</div>
+
+
+    <div class="content container"><div class="post">
+  <span class="post-date">01 Nov 2024</span>
+  <div>
+  <h1>How to create a simple grails application</h1>
+  <a href="https://github.com/rajeshbhola?tab=repositories" class="custom-badge">
+    <div class="created-by-container">
+      <div class="created-text">Written By</div>
+      <div class="name"><i class="fas fa-user"></i>&nbsp;Rajesh Bhola</div>
+    </div>
+  </a>
+  
+  <a href="/categories/grails">
+    <div class="created-by-container">
+        
+            <div class="name" style="background-color: #feb571; color: rgb(255, 255, 255);"><i class="fas fa-folder"></i>&nbsp;Grails</div>
+        
+    </div>
+</a>
+<br /><br />
+
+  <img src="/public/images/2.webp" alt="How to create a simple grails application" class="post-image1" />
+</div>
+
+<p><strong>Table of Contents</strong></p>
+
+<ul id="markdown-toc">
+  <li><a href="#introduction" id="markdown-toc-introduction">Introduction</a></li>
+  <li><a href="#what-is-the-grails-framework" id="markdown-toc-what-is-the-grails-framework">What is the Grails Framework</a></li>
+  <li><a href="#how-to-install-grails" id="markdown-toc-how-to-install-grails">How to Install Grails</a></li>
+  <li><a href="#how-to-set-up-a-new-project" id="markdown-toc-how-to-set-up-a-new-project">How to Set Up a New Project</a></li>
+  <li><a href="#next-step" id="markdown-toc-next-step">Next Step</a></li>
+  <li><a href="#how-to-run-the-application" id="markdown-toc-how-to-run-the-application">How to Run the Application</a></li>
+  <li><a href="#how-to-stop-the-application" id="markdown-toc-how-to-stop-the-application">How to Stop the Application</a></li>
+  <li><a href="#demo" id="markdown-toc-demo">Demo</a></li>
+  <li><a href="#conclusion" id="markdown-toc-conclusion">Conclusion</a></li>
+</ul>
+<p><br /></p>
+
+<h2 id="introduction">Introduction</h2>
+
+<p>Creating a simple Grails application is a straightforward process. Here’s a quick step-by-step guide to get you started. And this process is applicable for both VS Code and Intellij Ultimate Edition IDE.
+<br />
+<br /></p>
+
+<h2 id="what-is-the-grails-framework">What is the Grails Framework</h2>
+
+<p>Grails is an open-source web application framework that uses Groovy, a dynamic programming language for the Java platform.</p>
+
+<p>It is designed to simplify and accelerate web application development by providing a
+<strong>convention-over-configuration</strong> approach, built on top of popular technologies like <strong>Spring</strong>, <strong>Hibernate</strong>, and <strong>GSP</strong>(Groovy Server Pages).</p>
+
+<p>Grails is particularly useful for building scalable, enterprise-grade web applications with minimal configuration and boilerplate code, making it ideal for rapid application development.
+<br />
+<br /></p>
+
+<h2 id="how-to-install-grails">How to Install Grails</h2>
+
+<p>First, make sure you have Java Development Kit <strong>(JDK)</strong> installed on your system.</p>
+
+<p>Next, download and install the <strong>Grails Framework</strong> from the official site or use a tool like <strong>SDKMAN!</strong> to manage your Grails installation.</p>
+
+<p><strong>Install:</strong> Download and install Grails -&gt; <a href="https://grails.org/download.html" target="\_blank">Go to Download Page</a>
+<br />
+<br /></p>
+
+<h2 id="how-to-set-up-a-new-project">How to Set Up a New Project</h2>
+
+<p>Open a terminal or command prompt.</p>
+
+<p>Run the following command to create a new Grails application:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">grails create-app myapp</code></pre></figure>
+
+<p>Replace “<strong>myapp</strong>” with the name you want for your application.
+<br />
+<br /></p>
+
+<h2 id="next-step">Next Step</h2>
+<p>Move to the newly created project directory</p>
+
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">BubbleSort</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+        <span class="kt">int</span><span class="o">[]</span> <span class="n">arr</span> <span class="o">=</span> <span class="o">{</span><span class="mi">64</span><span class="o">,</span> <span class="mi">34</span><span class="o">,</span> <span class="mi">25</span><span class="o">,</span> <span class="mi">12</span><span class="o">,</span> <span class="mi">22</span><span class="o">,</span> <span class="mi">11</span><span class="o">,</span> <span class="mi">90</span><span class="o">};</span>
+        <span class="n">bubbleSort</span><span class="o">(</span><span class="n">arr</span><span class="o">);</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Sorted array:"</span><span class="o">);</span>
+        <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">value</span> <span class="o">:</span> <span class="n">arr</span><span class="o">)</span> <span class="o">{</span>
+            <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">print</span><span class="o">(</span><span class="n">value</span> <span class="o">+</span> <span class="s">" "</span><span class="o">);</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+
+<span class="kd">static</span> <span class="kt">void</span> <span class="nf">bubbleSort</span><span class="o">(</span><span class="kt">int</span><span class="o">[]</span> <span class="n">arr</span><span class="o">)</span> <span class="o">{</span>
+        <span class="kt">int</span> <span class="n">n</span> <span class="o">=</span> <span class="n">arr</span><span class="o">.</span><span class="na">length</span><span class="o">;</span>
+        <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">n</span> <span class="o">-</span> <span class="mi">1</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
+            <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">j</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span> <span class="n">j</span> <span class="o">&lt;</span> <span class="n">n</span> <span class="o">-</span> <span class="n">i</span> <span class="o">-</span> <span class="mi">1</span><span class="o">;</span> <span class="n">j</span><span class="o">++)</span> <span class="o">{</span>
+                <span class="k">if</span> <span class="o">(</span><span class="n">arr</span><span class="o">[</span><span class="n">j</span><span class="o">]</span> <span class="o">&gt;</span> <span class="n">arr</span><span class="o">[</span><span class="n">j</span> <span class="o">+</span> <span class="mi">1</span><span class="o">])</span> <span class="o">{</span>
+                    <span class="c1">// swap arr[j] and arr[j + 1]</span>
+                    <span class="kt">int</span> <span class="n">temp</span> <span class="o">=</span> <span class="n">arr</span><span class="o">[</span><span class="n">j</span><span class="o">];</span>
+                    <span class="n">arr</span><span class="o">[</span><span class="n">j</span><span class="o">]</span> <span class="o">=</span> <span class="n">arr</span><span class="o">[</span><span class="n">j</span> <span class="o">+</span> <span class="mi">1</span><span class="o">];</span>
+                    <span class="n">arr</span><span class="o">[</span><span class="n">j</span> <span class="o">+</span> <span class="mi">1</span><span class="o">]</span> <span class="o">=</span> <span class="n">temp</span><span class="o">;</span>
+                <span class="o">}</span>
+            <span class="o">}</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+<span class="o">}</span></code></pre></figure>
+
+<p><br />
+<br /></p>
+
+<h2 id="how-to-run-the-application">How to Run the Application</h2>
+
+<p>Start the Grails application with the following command</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">grails run-app</code></pre></figure>
+
+<p><br />
+This will start the embedded server and you can access your application at <strong>http://localhost:8080</strong>.</p>
+
+<p>Once the server is running, open your browser and go to <strong>http://localhost:8080</strong>. You should see the default Grails welcome page, indicating that your application is running successfully.
+<br />
+<br /></p>
+
+<h2 id="how-to-stop-the-application">How to Stop the Application</h2>
+
+<p>When you’re done, you can stop the Grails server by pressing <strong>CTRL + C</strong> in the terminal where it’s running.
+<br />
+<br /></p>
+
+<h2 id="demo">Demo</h2>
+
+<div class="video-container">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/fqFjuX4VZmU" allowfullscreen="" title="YouTube video player"></iframe>
+</div>
+<style>
+  .video-container {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    border-radius: 5px;
+    height: 0;
+    padding-top: 56.25%; /* 16:9 aspect ratio */
+    overflow: hidden;
+  }
+
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+</style>
+
+<p><br /></p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>You’ve successfully created and run a simple Grails application.
+<br />
+<br /></p>
+
+<p><em>Keep learning and happy coding!</em></p>
+
+</div>
+
+<p>
+  ==> Thank you for reading! If you found this information useful, please
+  consider supporting us by purchasing these recommended products.
+</p>
+<!-- buy from amazon -->
+<a class="buy-me-coffee-btn" href="/buy/">
+  <p style="color: #0d0c0c">
+    <i class="fas fa-shopping-cart fa-2x"></i> Buy Now
+  </p>
+</a>
+
+<br /><br /><br />
+
+<p>
+  Categories: 
+  <a href="/categories/grails/"><b>Grails</b></a
+  > 
+</p>
+
+<p>
+  Tags: 
+  <a href="/tags/basics/"><b>Basics</b></a
+  >,  
+  <a href="/tags/beginner/"><b>Beginner</b></a
+  >,  
+  <a href="/tags/simple-application/"><b>Simple Application</b></a
+  > 
+</p>
+
+<div class="related">
+  <h2 style="color: #ddd">Read More Posts</h2>
+  <ul class="related-posts">
+    
+  </ul>
+</div>
+
+
+<style>
+  .buy-me-coffee-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffde59; /* Purple color */
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+
+  .buy-me-coffee-btn p {
+    color: #090808;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    font-size: 1.2em;
+  }
+
+  .buy-me-coffee-btn .fas {
+    margin-right: 10px;
+  }
+
+  .buy-me-coffee-btn:hover {
+    background-color: #ffde59; /* Darker purple on hover */
+    transform: translateY(-3px);
+  }
+
+  .buy-me-coffee-btn:active {
+    background-color: #ffde59; /* Slightly lighter purple on click */
+    transform: translateY(0);
+  }
+</style>
+</div>
+
+    <br />
+    <button id="backToTop" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+
+    <footer>
+      <div class="content">
+        <p>&copy; 2024 <a href="/" style="font-size: 18px; text-decoration: underline;">bholaCodeCamp</a>. All rights reserved.</p>
+      
+        <a href="https://www.linkedin.com/in/rajeshbhola1/">
+          <i class="fab fa-linkedin"></i>
+          <span class="sr-only">Visit Rajesh Bhola's LinkedIn Profile</span>
+        </a>
+        <a href="https://github.com/rajeshbhola?tab=repositories">
+          <i class="fab fa-github"></i>
+          <span class="sr-only">Visit Rajesh Bhola's Github Profile</span>
+        </a>
+        <a href="https://x.com/therajeshbhola">
+          <i class="fab fa-twitter"></i>
+          <span class="sr-only">Visit Rajesh Bhola's Twitter Profile</span>
+        </a>
+        <a href="https://www.youtube.com/@bholarajesh">
+          <i class="fab fa-youtube"></i>
+          <span class="sr-only">Visit Rajesh Bhola's Youtube Profile</span>
+        </a>
+      </div>
+    </footer>
+
+    <script src="/public/js/main.js"></script>
+    
+  </body>
+</html>

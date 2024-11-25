@@ -1,0 +1,140 @@
+<div class="search-container">
+  <input
+    type="text"
+    id="search-input"
+    placeholder="Search posts..."
+    class="search-input"
+    autocomplete="off"
+  />
+  <div id="search-results" class="search-results"></div>
+</div>
+
+<script>
+  // Function to get URL parameters
+  function getQueryVariable(variable) {
+    var query = window.location.search.substring(1);
+    var vars = query.split("&");
+    for (const pair of vars) {
+      const [key, value] = pair.split("=");
+      if (key === variable) {
+        return decodeURIComponent(value.replace(/\+/g, "%20"));
+      }
+    }
+  }
+
+  // Initialize search functionality
+  function initSearch() {
+    var searchInput = document.getElementById("search-input");
+    var searchResults = document.getElementById("search-results");
+    var posts = [];
+
+    // Load the search data
+    var request = new XMLHttpRequest();
+    request.open("GET", "/search.json", true);
+    request.onload = function () {
+      if (request.status >= 200 && request.status < 400) {
+        posts = JSON.parse(request.responseText).posts;
+
+        // Check for search query in URL
+        var searchTerm = getQueryVariable("query");
+        if (searchTerm) {
+          searchInput.value = searchTerm;
+          search(searchTerm);
+        }
+      }
+    };
+    request.send();
+
+    // Perform search when typing
+    searchInput.addEventListener("input", function () {
+      search(this.value);
+    });
+
+    function search(query) {
+      if (query.trim() === "") {
+        // Clear results when the search box is empty
+        searchResults.innerHTML = "";
+        return;
+      }
+
+      var results = posts.filter(function (post) {
+        var titleMatch = post.title.toLowerCase().includes(query.toLowerCase());
+
+        return titleMatch;
+      });
+
+      displayResults(results);
+    }
+
+    function displayResults(results) {
+      if (results.length === 0) {
+        searchResults.innerHTML = "<p>No results found</p>";
+        return;
+      }
+
+      var html = "<ul>";
+      results.forEach(function (result) {
+        html +=
+          "<li>" +
+          '<a href="' +
+          result.url +
+          '">' +
+          result.title +
+          "</a>" +
+          "<p>" +
+          result.date +
+          "</p>" +
+          "</li>";
+      });
+      html += "</ul>";
+      searchResults.innerHTML = html;
+    }
+  }
+
+  // Initialize search when DOM is loaded
+  document.addEventListener("DOMContentLoaded", initSearch);
+</script>
+
+<style>
+  .search-container {
+    margin: 20px 0;
+    padding: 10px;
+    background-color: #272727;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  .search-input {
+    background-color: #232322;
+    color: white;
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ffde59;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    box-shadow: inset 0 1px 2px rgba(239, 245, 127, 0.1);
+  }
+  .search-results ul {
+    list-style: none;
+    padding: 0;
+  }
+  .search-results li {
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+  }
+  .search-results a {
+    color: #eff1f4;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  .search-results a:hover {
+    text-decoration: underline;
+  }
+  .search-results p {
+    margin: 5px 0 0;
+    color: #8e8e8e;
+    font-size: 14px;
+  }
+</style>

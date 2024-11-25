@@ -1,0 +1,48 @@
+# Dependencies
+markdown: kramdown
+
+# Permalinks
+permalink: /:categories/:year/:month/:day/:title/
+relative_permalinks: false
+
+# Setup
+title: bholaCodeCamp
+tagline: "Real-time project works"
+description:
+  "Take up one idea. Make that one idea your life - think of it, dream
+  of it, live on that idea, and just leave every other idea alone."
+url: http://bhola.github.io
+baseurl: /
+
+include: ["_includes"]
+
+author:
+  name: "Rajesh Bhola"
+  url: https://twitter.com/rajeshbhola1
+
+paginate: 5 # Number of posts per page
+paginate_path: "/page:num/"
+
+github:
+  repo: https://github.com/rajeshbhola?tab=repositories
+
+# for tags and categories autogeneration
+plugins:
+  - jekyll-archives
+  - jekyll-sitemap
+  - jekyll-toc
+
+jekyll-archives:
+  enabled: [categories, tags]
+  layouts:
+    category: category
+    tag: tag
+  permalinks:
+    tag: /tags/:name/
+    category: /categories/:name/
+toc:
+  min_level: 1
+  max_level: 3
+  list_class: toc
+  sublist_class: toc__sublist
+

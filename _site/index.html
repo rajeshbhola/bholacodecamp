@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+  <!-- Enable responsiveness on mobile devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
+
+
+  <title>
+     bholaCodeCamp &middot; Real-time project works
+    
+  </title>
+
+  <!-- Open Graph Meta Tags -->
+  <meta
+    property="og:title"
+    content="Home"
+  />
+  <meta
+    property="og:description"
+    content="Take up one idea. Make that one idea your life - think of it, dream of it, live on that idea, and just leave every other idea alone."
+  />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="http://localhost:4000/" />
+  <meta
+    property="og:image"
+    content="http://localhost:4000/public/hard-hat-solid.ico"
+  />
+
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta
+    name="twitter:title"
+    content="Home"
+  />
+  <meta
+    name="twitter:description"
+    content="Take up one idea. Make that one idea your life - think of it, dream of it, live on that idea, and just leave every other idea alone."
+  />
+  <meta
+    property="og:image"
+    content="http://localhost:4000/public/hard-hat-solid.ico"
+  />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/rajesh.css" />
+  <link rel="stylesheet" href="/public/css/syntax.css" />
+  <link rel="stylesheet" href="/public/css/bhola.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    rel="stylesheet"
+  />
+
+  <!-- Icons -->
+
+  <link
+    rel="icon"
+    href="/public/images/logo.webp"
+    type="image/x-icon"
+  />
+</head>
+
+
+  <body">
+
+    <!-- Loading Spinner with Logo -->
+    <div id="loading-spinner">
+      <div class="spinner-container">
+        <img src="/public/3.png" alt="bholaCodeCamp logo"  height="180" /> 
+          <div class="spinner"></div>
+      </div>
+    </div>
+
+    <div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <div>
+        <a
+          style="display: flex; justify-content: center; color: #ffde59;margin-top: 10px;"
+          href="/"
+          arial-label="Learn More"
+          ><img src="/public/images/logo.webp" alt="bholaCodeCamp logo"  height="120" /></a>
+      </div>
+      <h1 class="fira-code-h1">
+        <a href="/" arial-label="Learn More">
+          bholaCodeCamp
+        </a>
+      </h1>
+      <a href="https://github.com/rajeshbhola?tab=repositories">
+        <img
+          src="https://img.shields.io/badge/Created By-Rajesh Bhola-yellow"
+          alt="Rajesh Bhola"
+          height="32"
+          arial-label="Learn More"
+        /> </a
+      ><br>
+      <small style="color: rgb(161, 161, 161)">Take up one idea. Make that one idea your life - think of it, dream of it, live on that idea, and just leave every other idea alone.</small>
+    </div>
+    <hr>
+    <nav class="sidebar-nav">
+      <a
+        class="sidebar-nav-item active"
+        href="/"
+        >Home</a
+      >
+
+             
+      <a
+        class="sidebar-nav-item"
+        href="/about/"
+        >About Me</a
+      >
+          
+      <a
+        class="sidebar-nav-item"
+        href="/blogs/"
+        >Blogs</a
+      >
+                  
+      <a
+        class="sidebar-nav-item"
+        href="/privacy-policy/"
+        >Privacy Policy</a
+      >
+                              
+    </nav>
+  </div>
+</div>
+
+
+    <div class="content container"><div class="header"></div>
+
+
+<div class="search-container">
+  <input
+    type="text"
+    id="search-input"
+    placeholder="Search posts..."
+    class="search-input"
+    autocomplete="off"
+  />
+  <div id="search-results" class="search-results"></div>
+</div>
+
+<script>
+  // Function to get URL parameters
+  function getQueryVariable(variable) {
+    var query = window.location.search.substring(1);
+    var vars = query.split("&");
+    for (const pair of vars) {
+      const [key, value] = pair.split("=");
+      if (key === variable) {
+        return decodeURIComponent(value.replace(/\+/g, "%20"));
+      }
+    }
+  }
+
+  // Initialize search functionality
+  function initSearch() {
+    var searchInput = document.getElementById("search-input");
+    var searchResults = document.getElementById("search-results");
+    var posts = [];
+
+    // Load the search data
+    var request = new XMLHttpRequest();
+    request.open("GET", "/search.json", true);
+    request.onload = function () {
+      if (request.status >= 200 && request.status < 400) {
+        posts = JSON.parse(request.responseText).posts;
+
+        // Check for search query in URL
+        var searchTerm = getQueryVariable("query");
+        if (searchTerm) {
+          searchInput.value = searchTerm;
+          search(searchTerm);
+        }
+      }
+    };
+    request.send();
+
+    // Perform search when typing
+    searchInput.addEventListener("input", function () {
+      search(this.value);
+    });
+
+    function search(query) {
+      if (query.trim() === "") {
+        // Clear results when the search box is empty
+        searchResults.innerHTML = "";
+        return;
+      }
+
+      var results = posts.filter(function (post) {
+        var titleMatch = post.title.toLowerCase().includes(query.toLowerCase());
+
+        return titleMatch;
+      });
+
+      displayResults(results);
+    }
+
+    function displayResults(results) {
+      if (results.length === 0) {
+        searchResults.innerHTML = "<p>No results found</p>";
+        return;
+      }
+
+      var html = "<ul>";
+      results.forEach(function (result) {
+        html +=
+          "<li>" +
+          '<a href="' +
+          result.url +
+          '">' +
+          result.title +
+          "</a>" +
+          "<p>" +
+          result.date +
+          "</p>" +
+          "</li>";
+      });
+      html += "</ul>";
+      searchResults.innerHTML = html;
+    }
+  }
+
+  // Initialize search when DOM is loaded
+  document.addEventListener("DOMContentLoaded", initSearch);
+</script>
+
+<style>
+  .search-container {
+    margin: 20px 0;
+    padding: 10px;
+    background-color: #272727;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  .search-input {
+    background-color: #232322;
+    color: white;
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ffde59;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    box-shadow: inset 0 1px 2px rgba(239, 245, 127, 0.1);
+  }
+  .search-results ul {
+    list-style: none;
+    padding: 0;
+  }
+  .search-results li {
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+  }
+  .search-results a {
+    color: #eff1f4;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  .search-results a:hover {
+    text-decoration: underline;
+  }
+  .search-results p {
+    margin: 5px 0 0;
+    color: #8e8e8e;
+    font-size: 14px;
+  }
+</style>
+
+<br />
+
+<h2><b>Latest Posts</b></h2>
+<br />
+
+
+<div class="posts">
+  
+  <a href="/grails/2024/11/01/how-to-create-a-simple-grails-application/" class="post-link">
+    <div class="post post1 card">
+      <img src="/public/images/2.webp" alt="How to create a simple grails application" class="post-image" />
+      <div class="post-content">
+        <h3 class="post-title h1-size">How to create a simple grails application</h3>
+        <span class="post-date">November 01, 2024</span>
+        <img
+        src="https://img.shields.io/badge/Written By-Rajesh Bhola-white"
+        alt="Rajesh Bhola"
+        height="20"
+        arial-label="Learn More" />
+        
+        <img
+        src="https://img.shields.io/badge/Grails-orange"
+        alt="Grails"
+        height="20"
+      />
+      </div>
+    </div>
+  </a>
+  
+</div>
+
+
+<div class="pagination">
+  
+  <span class="pagination-item older">Older</span>
+   
+  <span class="pagination-item newer">Newer</span>
+  
+</div>
+<br />
+
+<div class="categories-container">
+  <h1 style="color: whitesmoke">All Categories</h1>
+  <div class="categories-buttons">
+    
+    <a
+      href="/categories/Grails"
+      class="category-button"
+      style="color: rgb(22, 23, 23); text-decoration: none"
+    >
+      Grails (1)
+    </a>
+    
+  </div>
+</div>
+</div>
+
+    <br />
+    <button id="backToTop" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+
+    <footer>
+      <div class="content">
+        <p>&copy; 2024 <a href="/" style="font-size: 18px; text-decoration: underline;">bholaCodeCamp</a>. All rights reserved.</p>
+      
+        <a href="https://www.linkedin.com/in/rajeshbhola1/">
+          <i class="fab fa-linkedin"></i>
+          <span class="sr-only">Visit Rajesh Bhola's LinkedIn Profile</span>
+        </a>
+        <a href="https://github.com/rajeshbhola?tab=repositories">
+          <i class="fab fa-github"></i>
+          <span class="sr-only">Visit Rajesh Bhola's Github Profile</span>
+        </a>
+        <a href="https://x.com/therajeshbhola">
+          <i class="fab fa-twitter"></i>
+          <span class="sr-only">Visit Rajesh Bhola's Twitter Profile</span>
+        </a>
+        <a href="https://www.youtube.com/@bholarajesh">
+          <i class="fab fa-youtube"></i>
+          <span class="sr-only">Visit Rajesh Bhola's Youtube Profile</span>
+        </a>
+      </div>
+    </footer>
+
+    <script src="/public/js/main.js"></script>
+    
+  </body>
+</html>

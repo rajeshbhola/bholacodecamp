@@ -1,0 +1,458 @@
+html {
+  font-family: "Fira Code", monospace;
+}
+@media (min-width: 48em) {
+  html {
+    font-size: 16px;
+  }
+}
+@media (min-width: 58em) {
+  html {
+    font-size: 20px;
+  }
+}
+
+.sidebar {
+  text-align: center;
+  padding: 2rem 1rem;
+  color: rgba(255, 255, 255, 0.5);
+  background-color: #202020;
+}
+@media (min-width: 48em) {
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 18rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .header {
+    margin: 0 auto;
+    display: none;
+  }
+}
+
+/* Sidebar links */
+.sidebar a {
+  color: #fff;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 200px;
+  font-size: 4vw;
+  font-weight: bold;
+  color: #fff;
+  background-image: url("/public/images/Header.webp");
+  background-size: cover;
+  background-position: center;
+  padding: 2vw;
+  border-top-left-radius: 1vw;
+  border-top-right-radius: 1vw;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* About section */
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 0 auto; /* This will center the image */
+  display: block; /* This will ensure the margin auto works */
+}
+
+.fira-code-h1 {
+  margin-top: 10px;
+  font-family: "Fira Code", monospace;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+}
+.fira-code-h1 a:hover {
+  text-decoration: none;
+  color: #ffcc33;
+}
+
+p {
+  line-height: 2rem !important;
+}
+
+.post1 {
+  margin-bottom: 2rem;
+  background-color: #272727 !important;
+  border-radius: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.post1:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+.categories-container {
+  padding: 20px;
+  background-color: #1e1e1e !important;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  text-align: center;
+}
+
+.categories-container h1 {
+  margin-bottom: 20px;
+  font-size: 2em;
+}
+
+.categories-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.category-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ffde59;
+  color: #171616;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.category-button:hover {
+  background-color: #ffcc33;
+}
+h2 {
+  color: #ffde59;
+}
+footer {
+  background-color: #1e1e1e;
+  color: #eef0f1;
+  text-align: center;
+}
+
+footer .content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+footer p {
+  font-size: 18px;
+}
+
+/* Sidebar nav */
+.sidebar-nav {
+  margin-bottom: 1rem;
+}
+.sidebar-nav-item {
+  display: block;
+  line-height: 1.75;
+}
+a.sidebar-nav-item:hover,
+a.sidebar-nav-item:focus {
+  text-decoration: underline;
+  color: fdd835;
+}
+.sidebar-nav-item.active {
+  font-weight: bold;
+  color: #ffde59;
+}
+
+@media (min-width: 48em) {
+  .sidebar-sticky {
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+  }
+}
+
+.content {
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+
+@media (min-width: 48em) {
+  .content {
+    max-width: 38rem;
+    margin-left: 20rem;
+    margin-right: 2rem;
+  }
+}
+
+@media (min-width: 64em) {
+  .content {
+    margin-left: 20rem !important;
+    margin-right: 2rem !important;
+  }
+}
+
+/*
+ * Reverse layout
+ *
+ * Flip the orientation of the page by placing the `.sidebar` on the right.
+ */
+
+@media (min-width: 48em) {
+  .layout-reverse .sidebar {
+    left: auto;
+    right: 0;
+  }
+  .layout-reverse .content {
+    margin-left: 2rem;
+    margin-right: 20rem;
+  }
+}
+
+@media (min-width: 64em) {
+  .layout-reverse .content {
+    margin-left: 4rem;
+    margin-right: 22rem;
+  }
+}
+
+.posts li a:hover {
+  color: #ffcc33;
+}
+
+.post-title:hover {
+  color: #ffcc33;
+}
+
+/* Scrollbar styling for WebKit browsers */
+::-webkit-scrollbar {
+  width: 10px; /* Set the width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0a0a; /* Track background color */
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to right, #ffde59, #ffde59); /* Gradient color */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(
+    to right,
+    #ffcc33,
+    #ffcc33
+  ); /* Darker gradient on hover */
+}
+
+::selection {
+  background-color: #ffde59; /* Background color for the selected text */
+  color: rgb(19, 18, 18); /* Text color for the selected text */
+}
+
+pre {
+  background-color: #272727;
+  border-radius: 5px;
+}
+
+@keyframes fadeInOut {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+#backToTop {
+  display: none; /* Hidden by default */
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 100; /* Make sure it stays above other elements */
+  border: none;
+  outline: none;
+  background-color: #333; /* Dark background */
+  color: #fff; /* White text */
+  cursor: pointer;
+  padding: 10px 15px;
+  border-radius: 50%;
+  font-size: 18px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s;
+}
+
+#backToTop:hover {
+  background-color: #555; /* Change background on hover */
+}
+
+/* Full-screen overlay */
+#loading-spinner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #1a1a1a; /* Semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999; /* Ensures it's on top of other content */
+}
+
+/* Spinner container */
+.spinner-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Spinner */
+.spinner {
+  border: 10px solid #c3c1c1; /* Light grey */
+  border-top: 10px solid #333; /* Dark grey */
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  animation: spin 1s linear infinite;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  margin: 20px auto;
+}
+
+@keyframes spin {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+.posts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column; /* Default to column for mobile */
+  align-items: center; /* Center items in the middle */
+  width: 100%;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.post-image {
+  width: 100%; /* Make image take full width */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover;
+  border-radius: 10px 10px 0 0; /* Rounded top corners */
+}
+
+@media (min-width: 768px) {
+  .card {
+    flex-direction: row; /* Side-by-side on larger screens */
+    align-items: flex-start;
+  }
+
+  .post-image {
+    width: 200px; /* Fixed width for larger screens */
+    height: 150px; /* Fixed height for larger screens */
+    border-radius: 10px; /* Rounded corners all around */
+  }
+}
+
+.post-image1 {
+  width: 100%; /* Make image take full width */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover;
+  border-radius: 10px 10px 0 0; /* Rounded top corners */
+}
+.post-content {
+  padding-left: 15px;
+}
+
+#markdown-toc {
+  text-decoration: underline;
+}
+
+#markdown-toc li {
+  color: #a9a9a9;
+  transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+/* Ensure links within the list items are styled */
+#markdown-toc li a {
+  color: inherit; /* Inherit color from li */
+  text-decoration: none;
+}
+
+#markdown-toc li a:hover {
+  color: #ffde59; /* Desired hover color */
+}
+
+#markdown-toc li:hover::marker {
+  color: #ffde59; /* Desired hover color for bullet points */
+}
+
+.created-by-container {
+  display: inline-flex;
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+  border-radius: 3px;
+  font-size: 14px;
+  line-height: 1;
+  cursor: pointer; /* Add cursor pointer to indicate clickability */
+}
+
+.created-text,
+.name {
+  padding: 6px 10px;
+  display: flex;
+  align-items: center;
+}
+
+.created-text {
+  background-color: #5b5b5b;
+  color: white;
+}
+
+.name {
+  background-color: #e6c302;
+  color: rgb(43, 43, 43);
+}
+
+/* Extra Small Devices (Phones) */
+@media (max-width: 575.98px) {
+  .card {
+    align-items: flex-start;
+  }
+  .post-content {
+    margin-top: 10px;
+    padding-left: 1px;
+  }
+} /* Small Devices (Portrait Tablets and Large Phones) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .card {
+    align-items: flex-start;
+  }
+  .post-content {
+    margin-top: 10px;
+    padding-left: 1px;
+  }
+} /* Medium Devices (Landscape Tablets) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+} /* Larger Devices */
+@media (min-width: 992px) {
+}

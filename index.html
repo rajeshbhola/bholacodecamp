@@ -1,0 +1,79 @@
+---
+layout: default
+title: Home
+---
+
+
+<div class="header"></div>
+
+
+{% include search.html %}
+<br />
+
+<h2><b>Latest Posts</b></h2>
+<br />
+
+
+<div class="posts">
+  {% for post in paginator.posts %}
+  <a href="{{ post.url | relative_url }}" class="post-link">
+    <div class="post post1 card">
+      <img src="{{ post.images }}" alt="{{ post.title }}" class="post-image" />
+      <div class="post-content">
+        <h3 class="post-title h1-size">{{ post.title }}</h3>
+        <span class="post-date">{{ post.date | date: "%B %d, %Y" }}</span>
+        <img
+        src="https://img.shields.io/badge/Written By-Rajesh Bhola-white"
+        alt="Rajesh Bhola"
+        height="20"
+        arial-label="Learn More" />
+        
+        <img
+        src="https://img.shields.io/badge/Grails-orange"
+        alt="Grails"
+        height="20"
+      />
+      </div>
+    </div>
+  </a>
+  {% endfor %}
+</div>
+
+
+<div class="pagination">
+  {% if paginator.next_page %}
+  <a
+    class="pagination-item older"
+    href="{{ '/page' | append: paginator.next_page | relative_url }}"
+    >Older</a
+  >
+  {% else %}
+  <span class="pagination-item older">Older</span>
+  {% endif %} {% if paginator.previous_page %} {% if paginator.page == 2 %}
+  <a class="pagination-item newer" href="{{ '/' | relative_url }}">Newer</a>
+  {% else %}
+  <a
+    class="pagination-item newer"
+    href="{{ '/page' | append: paginator.previous_page | relative_url }}"
+    >Newer</a
+  >
+  {% endif %} {% else %}
+  <span class="pagination-item newer">Newer</span>
+  {% endif %}
+</div>
+<br />
+
+<div class="categories-container">
+  <h1 style="color: whitesmoke">All Categories</h1>
+  <div class="categories-buttons">
+    {% for category in site.categories %}
+    <a
+      href="{{ '/categories/' | append: category[0] | relative_url }}"
+      class="category-button"
+      style="color: rgb(22, 23, 23); text-decoration: none"
+    >
+      {{ category[0] }} ({{ category[1].size }})
+    </a>
+    {% endfor %}
+  </div>
+</div>
