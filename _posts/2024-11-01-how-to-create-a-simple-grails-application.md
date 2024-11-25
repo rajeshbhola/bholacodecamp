@@ -8,7 +8,7 @@ images: ["https://rajeshbhola.github.io/bholacodecamp/public/images/2.webp"]
 ---
 
 {% include post-header.html
-page_category="/categories/grails" %}
+page_category="bholacodecamp/categories/grails" %}
 
 **Table of Contents**
 
