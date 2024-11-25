@@ -12,7 +12,7 @@ description:
   "Take up one idea. Make that one idea your life - think of it, dream
   of it, live on that idea, and just leave every other idea alone."
 url: http://rajeshbhola.github.io
-baseurl: bholacodecamp/
+baseurl: https://rajeshbhola.github.io/bholacodecamp/
 
 include: ["_includes"]
 
