@@ -18,13 +18,13 @@
   />
   <meta
     property="og:description"
-    content="{% if page.og_description %}{{ page.og_description }}{% else %}{{ site.description }}{% endif %}"
+    content="{% if page.og_description %}{{ page.og_description }}{% else %}{{ page.description }}{% endif %}"
   />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="{{ page.url | absolute_url }}" />
   <meta
     property="og:image"
-    content="{% if page.og_image %}{{ page.og_image | absolute_url }}{% else %}{{ '/public/hard-hat-solid.ico' | absolute_url }}{% endif %}"
+    content="{% if page.og_image %}{{ page.og_image | page.canonical_url }}{% else %}{{ '/public/hard-hat-solid.ico' | absolute_url }}{% endif %}"
   />
 
   <!-- Twitter Card Meta Tags -->
@@ -35,11 +35,11 @@
   />
   <meta
     name="twitter:description"
-    content="{% if page.og_description %}{{ page.og_description }}{% else %}{{ site.description }}{% endif %}"
+    content="{% if page.og_description %}{{ page.og_description }}{% else %}{{ page.description }}{% endif %}"
   />
   <meta
     property="og:image"
-    content="{% if page.og_image %}{{ page.og_image | absolute_url }}{% else %}{{ '/public/hard-hat-solid.ico' | absolute_url }}{% endif %}"
+    content="{% if page.og_image %}{{ page.og_image | page.canonical_url }}{% else %}{{ 'bholacodecamp/public/images/logo.webp' | absolute_url }}{% endif %}"
   />
 
   <!-- CSS -->

@@ -6,6 +6,7 @@ categories: [Grails]
 tags: [Basics, Beginner, Simple Application]
 images: ["https://rajeshbhola.github.io/bholacodecamp/public/images/2.webp"]
 canonical_url: "https://rajeshbhola.github.io/bholacodecamp/public/images/2.webp"
+description: "Creating a simple Grails application is a straightforward process. Here’s a quick step-by-step guide to get you started."
 ---
 
 {% include post-header.html
