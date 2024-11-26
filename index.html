@@ -10,6 +10,18 @@ title: Home
 {% include search.html %}
 <br />
 
+<div class="categories-container">
+  <h1 style="color: whitesmoke">Total Blog Posts</h1>
+  <div class="categories-buttons">
+    {% assign total_posts = 0 %}
+    {% for category in site.categories %}
+      {% assign total_posts = total_posts | plus: category[1].size %}
+    {% endfor %}
+    <!-- Display the total number of posts -->
+    <p>written so far: {{ total_posts }}
+  </div>
+</div>
+
 <h2><b>Latest Posts</b></h2>
 <br />
 
@@ -63,14 +75,4 @@ title: Home
 </div>
 <br />
 
-<div class="categories-container">
-  <h1 style="color: whitesmoke">Total Blog Posts</h1>
-  <div class="categories-buttons">
-    {% assign total_posts = 0 %}
-    {% for category in site.categories %}
-      {% assign total_posts = total_posts | plus: category[1].size %}
-    {% endfor %}
-    <!-- Display the total number of posts -->
-    <p>written so far: {{ total_posts }}
-  </div>
-</div>
+
