@@ -30,7 +30,7 @@
 
     // Load the search data
     var request = new XMLHttpRequest();
-    request.open("GET", "/search.json", true);
+    request.open("GET", "/bholacodecamp/search.json", true);
     request.onload = function () {
       if (request.status >= 200 && request.status < 400) {
         posts = JSON.parse(request.responseText).posts;
