@@ -5,6 +5,7 @@ date: 2024-11-01
 categories: [Grails]
 tags: [Basics, Beginner, Simple Application]
 images: ["https://rajeshbhola.github.io/bholacodecamp/public/images/2.webp"]
+canonical_url: "https://rajeshbhola.github.io/bholacodecamp/public/images/2.webp"
 ---
 
 {% include post-header.html
