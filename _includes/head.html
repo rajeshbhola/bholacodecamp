@@ -24,7 +24,7 @@
   <meta property="og:url" content="{{ page.url | absolute_url }}" />
   <meta
     property="og:image"
-    content="{% if page.og_image %}{{ page.canonical_url | absolute_url }}{% else %}{{ '/public/images/logo.webp' | absolute_url }}{% endif %}"
+    content="{% if page.canonical_url %}{{ page.canonical_url | absolute_url }}{% else %}{{ '/public/images/logo.webp' | absolute_url }}{% endif %}"
   />
 
   <!-- Twitter Card Meta Tags -->
@@ -39,7 +39,7 @@
   />
   <meta
     property="og:image"
-    content="{% if page.og_image %}{{ page.canonical_url | absolute_url }}{% else %}{{ '/public/images/logo.webp' | absolute_url }}{% endif %}"
+    content="{% if page.canonical_url %}{{ page.canonical_url | absolute_url }}{% else %}{{ '/public/images/logo.webp' | absolute_url }}{% endif %}"
   />
 
   <!-- CSS -->
