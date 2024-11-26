@@ -356,7 +356,6 @@ pre {
   width: 100%; /* Make image take full width */
   height: auto; /* Maintain aspect ratio */
   object-fit: cover;
-  border-radius: 10px 10px 0 0; /* Rounded top corners */
 }
 
 @media (min-width: 768px) {
@@ -366,9 +365,8 @@ pre {
   }
 
   .post-image {
-    width: 200px; /* Fixed width for larger screens */
+    width: 250px; /* Fixed width for larger screens */
     height: 150px; /* Fixed height for larger screens */
-    border-radius: 10px; /* Rounded corners all around */
   }
 }
 
