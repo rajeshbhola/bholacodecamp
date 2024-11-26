@@ -64,16 +64,13 @@ title: Home
 <br />
 
 <div class="categories-container">
-  <h1 style="color: whitesmoke">All Categories</h1>
+  <h1 style="color: whitesmoke">Total Blog Posts</h1>
   <div class="categories-buttons">
+    {% assign total_posts = 0 %}
     {% for category in site.categories %}
-    <a
-      href="{{ '/categories/' | append: category[0] | relative_url }}"
-      class="category-button"
-      style="color: rgb(22, 23, 23); text-decoration: none"
-    >
-      {{ category[0] }} ({{ category[1].size }})
-    </a>
+      {% assign total_posts = total_posts | plus: category[1].size %}
     {% endfor %}
+    <!-- Display the total number of posts -->
+    <p>written so far: {{ total_posts }}
   </div>
 </div>

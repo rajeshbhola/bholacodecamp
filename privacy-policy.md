@@ -35,4 +35,4 @@ We may update this Privacy Policy from time to time to reflect changes in our pr
 <br>
 
 ## Contact Us
-If you have any questions about this Privacy Policy, please contact us at bholacodecamp@gmail.com
+If you have any questions about this Privacy Policy, please go to about me page and follow.
