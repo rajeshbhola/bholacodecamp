@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How to create a simple grails application"
+title: "How to Create a Simple Grails Application"
 date: 2024-11-01
 categories: [Grails]
 tags: [Basics, Beginner, Simple Application]
