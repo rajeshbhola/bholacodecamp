@@ -6,7 +6,7 @@ date: 2024-12-03
 author: Rajesh Bhola
 categories: [web-development, tutorials]
 tags: [java]
-image: /assets/images/ban1.png
+image: /assets/images/code.png
 featured: true
 ---
 
