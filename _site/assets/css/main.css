@@ -75,12 +75,12 @@ b, strong {
 }
 
 ::-moz-selection {
-  background-color: #6577dd;
+  background-color: #000000;
   color: white;
 }
 
 ::selection {
-  background-color: #6577dd;
+  background-color: #000000;
   color: white;
 }
 

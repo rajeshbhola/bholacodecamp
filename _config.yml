@@ -1,6 +1,6 @@
 # Site Settings
 title: bholaCodeCamp
-description: "At BholaCodeCamp, I'm dedicated to helping developers at all levels enhance their skills and advance their careers. My tutorials, resources, and community are designed to support your learning journey."
+description: "Welcome to BholaCodeCamp — where I’m leveling up my technical knowledge and inviting you to read the blogs. With cool tutorials, handy dev resources, and an awesome blogs, we’re all about learning, building, and having fun."
 baseurl: "/bholacodecamp"
 url: "https://rajeshbhola.github.io/"
 permalink: /:title/
