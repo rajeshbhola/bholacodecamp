@@ -1,77 +1,348 @@
----
-layout: default
-title: Home
----
-<div class="space-y-16">
-    
-    <!-- Hero Section -->
-<section class="hero bg-gray-200 text-gray-800 rounded-xl p-4 md:p-12">
-    <div class="max-w-3xl mx-auto text-center">
-        <h1 class="text-3xl md:text-5xl font-bold mb-4 text-black shadow-lg p-2 md:p-4 rounded-lg">
-            {{ site.title }} <hr class="border-2 border-gray-800">
-            <p class="text-gray-400 max-w-3xl mx-auto"> Ultimate Programming Resource</p>
-        </h1>
-        
-        <p class="text-base md:text-xl opacity-90 mb-6 md:mb-8 text-gray-600">{{ site.description }}</p>
-        <a href="#latest-posts" class="inline-block bg-gray-900 text-white px-3 py-2 md:px-6 md:py-3 rounded-lg font-semibold hover:bg-gray-700 transition-colors" aria-label="Start Reading">
-            Start Reading
-        </a>
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head>
+	<meta name="generator" content="Hugo 0.146.6"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>bholaCodeCamp</title>
+
+<meta name="description" content="">
+<meta name="author" content="Rajesh Bhola">
+<link rel="canonical" href="//localhost:1313/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.3faaabb1d48aedcb12079ea7a3eefd6754713b14c078564611fae5b7ebf47e56.css" integrity="sha256-P6qrsdSK7csSB56no&#43;79Z1RxOxTAeFZGEfrlt&#43;v0flY=" rel="preload stylesheet" as="style">
+<link rel="icon" href="//localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="//localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="//localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="//localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="//localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/json" href="//localhost:1313/index.json">
+<link rel="alternate" hreflang="en" href="//localhost:1313/">
+<link href="https://fonts.googleapis.com/css2?family=Jaturat&display=swap" rel="stylesheet">
+
+
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:url" content="//localhost:1313/">
+  <meta property="og:site_name" content="bholaCodeCamp">
+  <meta property="og:title" content="bholaCodeCamp">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="website">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="bholaCodeCamp">
+<meta name="twitter:description" content="">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "bholaCodeCamp",
+  "url": "//localhost:1313/",
+  "description": "",
+  "logo": "//localhost:1313/favicon.ico",
+  "sameAs": [
+      "https://github.com/rajeshbhola", "https://linkedin.com/in/rajeshbhola1", "https://twitter.com/therajeshbhola"
+  ]
+}
+</script>
+</head>
+
+<body class="list" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="//localhost:1313/" accesskey="h" title="bholaCodeCamp">
+                    <img src="//localhost:1313/images/bcc.webp" alt="" aria-label="logo"
+                        height="90" class="logo-img">bholaCodeCamp</a>
+            <div class="logo-switches">
+                
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="//localhost:1313/" title="Home">
+                    <span class="active">Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="//localhost:1313/categories/" title="Categories">
+                    <span>Categories</span>
+                </a>
+            </li>
+            <li>
+                <a href="//localhost:1313/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
+            <li>
+                <a href="//localhost:1313/post/" title="Posts">
+                    <span>Posts</span>
+                </a>
+            </li>
+            <li>
+                <a href="//localhost:1313/archives/" title="Archives">
+                    <span>Archives</span>
+                </a>
+            </li>
+        </ul>
+</header>
+</nav>
+<main class="main"> 
+<article class="first-entry home-info">
+    <header class="entry-header">
+        <h1>@rajeshbhola</h1>
+    </header>
+    <div class="entry-content">
+        Welcome to BholaCodeCamp — where I’m leveling up my technical knowledge and inviting you to read the blogs. With cool tutorials, handy dev resources, and an awesome blogs, we’re all about learning, building, and having fun.
     </div>
-</section>
-
-    <!-- Featured Posts -->
-    {% assign featured_posts = site.posts | where: "featured", true | sort: "date" | reverse | limit: 6 %}
-    {% if featured_posts.size > 0 %}
-    <section>
-        <h2 class="text-3xl font-bold mb-8">Featured Posts</h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {% for post in featured_posts %}
-            <article class="bg-black rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
-                {% if post.image %}
-                <img src="{{site.baseurl}}{{ post.image }}" alt="{{ post.title }}" class="w-full h-48 object-cover">
-                {% endif %}
-                <div class="p-6">
-                    <h3 class="text-xl font-bold mb-2">
-                        <a href="{{site.baseurl}}{{ post.url }}" class="text-gray-200 hover:text-blue-600">{{ post.title }}</a>
-                    </h3>
-                    <p class="text-gray-600 mb-4">{{ post.description | strip_html | truncatewords: 8 }}</p>
-                    <div class="flex justify-between items-center">
-                        <time class="text-sm text-gray-500">{{ post.date | date: "%B %d, %Y" }}</time>
-                        <a href="{{site.baseurl}}{{ post.url }}" class="text-blue-600 hover:text-blue-800">Read More →</a>
-                    </div>
-                </div>
-            </article>
-            {% endfor %}
-        </div>
-    </section>
-    {% endif %}
-
-    <!-- Latest Posts -->
-    <section id="latest-posts">
-        <h2 class="text-3xl font-bold mb-8">Latest Posts</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {% for post in site.posts limit:6 %}
-            <article class="bg-black rounded-lg shadow-md overflow-hidden flex flex-col">
-                <div class="p-6">
-                    <h3 class="text-2xl font-bold mb-2">
-                        <a href="{{site.baseurl}}{{ post.url }}" class="text-gray-200 hover:text-blue-600">{{ post.title }}</a>
-                    </h3>
-                    <p class="text-gray-600 mb-4 flex-grow">{{ post.description | strip_html | truncatewords: 8 }}</p>
-                    <div class="flex justify-between items-center">
-                        <time class="text-sm text-gray-500">{{ post.date | date: "%B %d, %Y" }}</time>
-                        <div class="flex space-x-2">
-                            <a href="{{ site.baseurl }}/about/" class="text-sm px-3 py-1 bg-gray-700 text-gray-400 rounded-full">
-                                {{ site.author.name }}
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </article>
-            {% endfor %}
-        </div>
-
-        <div class="mt-12 flex justify-center">
-            <a href="{{ site.baseurl }}/blog" class="btn px-4 py-2 bg-gray-900 text-white rounded-lg" aria-label="Go To All Blogs">Go To All Blogs</a>
-        </div>
-    </section>
+    <footer class="entry-footer">
+        <div class="social-icons" >
+    <a href="https://github.com/rajeshbhola" target="_blank" rel="noopener noreferrer me"
+        title="GitHub">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path
+        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+    </path>
+</svg>
+    </a>
+    <a href="https://linkedin.com/in/rajeshbhola1" target="_blank" rel="noopener noreferrer me"
+        title="LinkedIn">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+    <rect x="2" y="9" width="4" height="12"></rect>
+    <circle cx="4" cy="4" r="2"></circle>
+</svg>
+    </a>
+    <a href="https://twitter.com/therajeshbhola" target="_blank" rel="noopener noreferrer me"
+        title="Twitter">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path
+        d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z">
+    </path>
+</svg>
+    </a>
 </div>
+
+    </footer>
+    <br>
+    
+    <a href="/springboot/" class="custom-button">
+        <button style="padding: 10px 20px; font-size: 16px; background-color: rgb(46, 46, 51); color: rgb(255, 255, 255);">SpringBoot</button>
+    </a>
+    
+      
+</article><h2>Technologies</h2><br>
+<a href="/springboot/" class="custom-button">
+    <button style="padding: 10px 20px; font-size: 16px; background-color: rgb(46, 46, 51); color: rgb(255, 255, 255);margin-bottom: 9px;">SpringBoot</button>
+</a>
+<a href="/springboot/" class="custom-button">
+    <button style="padding: 10px 20px; font-size: 16px; background-color: rgb(46, 46, 51); color: rgb(255, 255, 255);margin-bottom: 9px;">SpringBoot</button>
+</a>
+<a href="/springboot/" class="custom-button">
+    <button style="padding: 10px 20px; font-size: 16px; background-color: rgb(46, 46, 51); color: rgb(255, 255, 255);margin-bottom: 9px;">SpringBoot</button>
+</a>
+<a href="/springboot/" class="custom-button">
+    <button style="padding: 10px 20px; font-size: 16px; background-color: rgb(46, 46, 51); color: rgb(255, 255, 255);margin-bottom: 9px;">SpringBoot</button>
+</a>
+<a href="/springboot/" class="custom-button">
+    <button style="padding: 10px 20px; font-size: 16px; background-color: rgb(46, 46, 51); color: rgb(255, 255, 255);margin-bottom: 9px;">SpringBoot</button>
+</a>
+
+
+<a href="/springboot/" class="custom-button">
+    <button style="padding: 10px 20px; font-size: 16px; background-color: rgb(46, 46, 51); color: rgb(255, 255, 255);margin-bottom: 9px;">SpringBoot</button>
+</a>
+<a href="/springboot/" class="custom-button">
+    <button style="padding: 10px 20px; font-size: 16px; background-color: rgb(46, 46, 51); color: rgb(255, 255, 255);margin-bottom: 9px;">SpringBoot</button>
+</a>
+<a href="/springboot/" class="custom-button">
+    <button style="padding: 10px 20px; font-size: 16px; background-color: rgb(46, 46, 51); color: rgb(255, 255, 255);margin-bottom: 9px;">SpringBoot</button>
+</a>
+<a href="/springboot/" class="custom-button">
+    <button style="padding: 10px 20px; font-size: 16px; background-color: rgb(46, 46, 51); color: rgb(255, 255, 255);margin-bottom: 9px;">SpringBoot</button>
+</a>
+<a href="/springboot/" class="custom-button">
+    <button style="padding: 10px 20px; font-size: 16px; background-color: rgb(46, 46, 51); color: rgb(255, 255, 255);margin-bottom: 9px;">SpringBoot</button>
+</a>
+<br><br><br>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">How github pages is suitable for static websites
+    </h2>
+  </header>
+  
+  <footer class="entry-footer"><span title='2025-04-21 17:45:18 +0530 IST'>April 21, 2025</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Rajesh Bhola</footer>
+  <a class="entry-link" aria-label="post link to How github pages is suitable for static websites" href="//localhost:1313/post/first/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Second Post
+    </h2>
+  </header>
+  
+  <footer class="entry-footer"><span title='2025-04-21 17:45:18 +0530 IST'>April 21, 2025</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Rajesh Bhola</footer>
+  <a class="entry-link" aria-label="post link to Second Post" href="//localhost:1313/post/second-post/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Second Post 0
+    </h2>
+  </header>
+  
+  <footer class="entry-footer"><span title='2025-04-21 17:45:18 +0530 IST'>April 21, 2025</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Rajesh Bhola</footer>
+  <a class="entry-link" aria-label="post link to Second Post 0" href="//localhost:1313/post/second-post-copy/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Second Post 2
+    </h2>
+  </header>
+  
+  <footer class="entry-footer"><span title='2025-04-21 17:45:18 +0530 IST'>April 21, 2025</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Rajesh Bhola</footer>
+  <a class="entry-link" aria-label="post link to Second Post 2" href="//localhost:1313/post/second-post-copy-2/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Second Post 3
+    </h2>
+  </header>
+  
+  <footer class="entry-footer"><span title='2025-04-21 17:45:18 +0530 IST'>April 21, 2025</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Rajesh Bhola</footer>
+  <a class="entry-link" aria-label="post link to Second Post 3" href="//localhost:1313/post/second-post-copy-3/"></a>
+</article>
+<footer class="page-footer">
+  <nav class="pagination">
+    <a class="next" href="//localhost:1313/page/2/">&nbsp;Next&nbsp;»
+    </a>
+  </nav>
+</footer>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="//localhost:1313/">bholaCodeCamp</a></span> · 
+
+    <span>
+        Developed by
+        <a href="https://rajeshbhola.github.io/" rel="noopener noreferrer" target="_blank">Rajesh Bhola</a>
+        
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>
