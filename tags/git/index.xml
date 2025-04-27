@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Git on bholaCodeCamp</title>
-    <link>https://rajeshbhola.github.io/bholacodecamp/tags/git/</link>
+    <link>https://rajeshbhola.github.io/bholacodecamp/tags/git.html</link>
     <description>Recent content in Git on bholaCodeCamp</description>
     <generator>Hugo -- 0.146.6</generator>
     <language>en-us</language>
@@ -10,9 +10,9 @@
     <atom:link href="https://rajeshbhola.github.io/bholacodecamp/tags/git/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Second Post</title>
-      <link>https://rajeshbhola.github.io/bholacodecamp/post/second-post/</link>
+      <link>https://rajeshbhola.github.io/bholacodecamp/post/second-post.html</link>
       <pubDate>Mon, 21 Apr 2025 17:45:18 +0530</pubDate>
-      <guid>https://rajeshbhola.github.io/bholacodecamp/post/second-post/</guid>
+      <guid>https://rajeshbhola.github.io/bholacodecamp/post/second-post.html</guid>
       <description>&lt;h1 id=&#34;a-first-level-heading&#34;&gt;A first-level heading&lt;/h1&gt;
 &lt;h2 id=&#34;a-second-level-heading&#34;&gt;A second-level heading&lt;/h2&gt;
 &lt;h3 id=&#34;a-third-level-heading&#34;&gt;A third-level heading&lt;/h3&gt;
@@ -37,9 +37,9 @@ git commit
     </item>
     <item>
       <title>Second Post 0</title>
-      <link>https://rajeshbhola.github.io/bholacodecamp/post/second-post-copy/</link>
+      <link>https://rajeshbhola.github.io/bholacodecamp/post/second-post-copy.html</link>
       <pubDate>Mon, 21 Apr 2025 17:45:18 +0530</pubDate>
-      <guid>https://rajeshbhola.github.io/bholacodecamp/post/second-post-copy/</guid>
+      <guid>https://rajeshbhola.github.io/bholacodecamp/post/second-post-copy.html</guid>
       <description>&lt;h1 id=&#34;a-first-level-heading&#34;&gt;A first-level heading&lt;/h1&gt;
 &lt;h2 id=&#34;a-second-level-heading&#34;&gt;A second-level heading&lt;/h2&gt;
 &lt;h3 id=&#34;a-third-level-heading&#34;&gt;A third-level heading&lt;/h3&gt;
@@ -52,9 +52,9 @@ git commit
     </item>
     <item>
       <title>Second Post 2</title>
-      <link>https://rajeshbhola.github.io/bholacodecamp/post/second-post-copy-2/</link>
+      <link>https://rajeshbhola.github.io/bholacodecamp/post/second-post-copy-2.html</link>
       <pubDate>Mon, 21 Apr 2025 17:45:18 +0530</pubDate>
-      <guid>https://rajeshbhola.github.io/bholacodecamp/post/second-post-copy-2/</guid>
+      <guid>https://rajeshbhola.github.io/bholacodecamp/post/second-post-copy-2.html</guid>
       <description>&lt;h1 id=&#34;a-first-level-heading&#34;&gt;A first-level heading&lt;/h1&gt;
 &lt;h2 id=&#34;a-second-level-heading&#34;&gt;A second-level heading&lt;/h2&gt;
 &lt;h3 id=&#34;a-third-level-heading&#34;&gt;A third-level heading&lt;/h3&gt;
@@ -67,9 +67,9 @@ git commit
     </item>
     <item>
       <title>Second Post 3</title>
-      <link>https://rajeshbhola.github.io/bholacodecamp/post/second-post-copy-3/</link>
+      <link>https://rajeshbhola.github.io/bholacodecamp/post/second-post-copy-3.html</link>
       <pubDate>Mon, 21 Apr 2025 17:45:18 +0530</pubDate>
-      <guid>https://rajeshbhola.github.io/bholacodecamp/post/second-post-copy-3/</guid>
+      <guid>https://rajeshbhola.github.io/bholacodecamp/post/second-post-copy-3.html</guid>
       <description>&lt;h1 id=&#34;a-first-level-heading&#34;&gt;A first-level heading&lt;/h1&gt;
 &lt;h2 id=&#34;a-second-level-heading&#34;&gt;A second-level heading&lt;/h2&gt;
 &lt;h3 id=&#34;a-third-level-heading&#34;&gt;A third-level heading&lt;/h3&gt;
@@ -82,9 +82,9 @@ git commit
     </item>
     <item>
       <title>Second Post 4</title>
-      <link>https://rajeshbhola.github.io/bholacodecamp/post/second-post-copy-4/</link>
+      <link>https://rajeshbhola.github.io/bholacodecamp/post/second-post-copy-4.html</link>
       <pubDate>Mon, 21 Apr 2025 17:45:18 +0530</pubDate>
-      <guid>https://rajeshbhola.github.io/bholacodecamp/post/second-post-copy-4/</guid>
+      <guid>https://rajeshbhola.github.io/bholacodecamp/post/second-post-copy-4.html</guid>
       <description>&lt;h1 id=&#34;a-first-level-heading&#34;&gt;A first-level heading&lt;/h1&gt;
 &lt;h2 id=&#34;a-second-level-heading&#34;&gt;A second-level heading&lt;/h2&gt;
 &lt;h3 id=&#34;a-third-level-heading&#34;&gt;A third-level heading&lt;/h3&gt;
@@ -97,9 +97,9 @@ git commit
     </item>
     <item>
       <title>Second Post 5</title>
-      <link>https://rajeshbhola.github.io/bholacodecamp/post/second-post-copy-5/</link>
+      <link>https://rajeshbhola.github.io/bholacodecamp/post/second-post-copy-5.html</link>
       <pubDate>Mon, 21 Apr 2025 17:45:18 +0530</pubDate>
-      <guid>https://rajeshbhola.github.io/bholacodecamp/post/second-post-copy-5/</guid>
+      <guid>https://rajeshbhola.github.io/bholacodecamp/post/second-post-copy-5.html</guid>
       <description>&lt;h1 id=&#34;a-first-level-heading&#34;&gt;A first-level heading&lt;/h1&gt;
 &lt;h2 id=&#34;a-second-level-heading&#34;&gt;A second-level heading&lt;/h2&gt;
 &lt;h3 id=&#34;a-third-level-heading&#34;&gt;A third-level heading&lt;/h3&gt;
@@ -112,9 +112,9 @@ git commit
     </item>
     <item>
       <title>Second Post 6</title>
-      <link>https://rajeshbhola.github.io/bholacodecamp/post/second-post-copy-6/</link>
+      <link>https://rajeshbhola.github.io/bholacodecamp/post/second-post-copy-6.html</link>
       <pubDate>Mon, 21 Apr 2025 17:45:18 +0530</pubDate>
-      <guid>https://rajeshbhola.github.io/bholacodecamp/post/second-post-copy-6/</guid>
+      <guid>https://rajeshbhola.github.io/bholacodecamp/post/second-post-copy-6.html</guid>
       <description>&lt;h1 id=&#34;a-first-level-heading&#34;&gt;A first-level heading&lt;/h1&gt;
 &lt;h2 id=&#34;a-second-level-heading&#34;&gt;A second-level heading&lt;/h2&gt;
 &lt;h3 id=&#34;a-third-level-heading&#34;&gt;A third-level heading&lt;/h3&gt;
@@ -127,9 +127,9 @@ git commit
     </item>
     <item>
       <title>Second Post 7</title>
-      <link>https://rajeshbhola.github.io/bholacodecamp/post/second-post-copy-7/</link>
+      <link>https://rajeshbhola.github.io/bholacodecamp/post/second-post-copy-7.html</link>
       <pubDate>Mon, 21 Apr 2025 17:45:18 +0530</pubDate>
-      <guid>https://rajeshbhola.github.io/bholacodecamp/post/second-post-copy-7/</guid>
+      <guid>https://rajeshbhola.github.io/bholacodecamp/post/second-post-copy-7.html</guid>
       <description>&lt;h1 id=&#34;a-first-level-heading&#34;&gt;A first-level heading&lt;/h1&gt;
 &lt;h2 id=&#34;a-second-level-heading&#34;&gt;A second-level heading&lt;/h2&gt;
 &lt;h3 id=&#34;a-third-level-heading&#34;&gt;A third-level heading&lt;/h3&gt;
@@ -142,9 +142,9 @@ git commit
     </item>
     <item>
       <title>Second Post 8</title>
-      <link>https://rajeshbhola.github.io/bholacodecamp/post/second-post-copy-8/</link>
+      <link>https://rajeshbhola.github.io/bholacodecamp/post/second-post-copy-8.html</link>
       <pubDate>Mon, 21 Apr 2025 17:45:18 +0530</pubDate>
-      <guid>https://rajeshbhola.github.io/bholacodecamp/post/second-post-copy-8/</guid>
+      <guid>https://rajeshbhola.github.io/bholacodecamp/post/second-post-copy-8.html</guid>
       <description>&lt;h1 id=&#34;a-first-level-heading&#34;&gt;A first-level heading&lt;/h1&gt;
 &lt;h2 id=&#34;a-second-level-heading&#34;&gt;A second-level heading&lt;/h2&gt;
 &lt;h3 id=&#34;a-third-level-heading&#34;&gt;A third-level heading&lt;/h3&gt;
@@ -157,9 +157,9 @@ git commit
     </item>
     <item>
       <title>Second Post 9</title>
-      <link>https://rajeshbhola.github.io/bholacodecamp/post/second-post-copy-9/</link>
+      <link>https://rajeshbhola.github.io/bholacodecamp/post/second-post-copy-9.html</link>
       <pubDate>Mon, 21 Apr 2025 17:45:18 +0530</pubDate>
-      <guid>https://rajeshbhola.github.io/bholacodecamp/post/second-post-copy-9/</guid>
+      <guid>https://rajeshbhola.github.io/bholacodecamp/post/second-post-copy-9.html</guid>
       <description>&lt;h1 id=&#34;a-first-level-heading&#34;&gt;A first-level heading&lt;/h1&gt;
 &lt;h2 id=&#34;a-second-level-heading&#34;&gt;A second-level heading&lt;/h2&gt;
 &lt;h3 id=&#34;a-third-level-heading&#34;&gt;A third-level heading&lt;/h3&gt;

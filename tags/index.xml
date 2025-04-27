@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tags on bholaCodeCamp</title>
-    <link>https://rajeshbhola.github.io/bholacodecamp/tags/</link>
+    <link>https://rajeshbhola.github.io/bholacodecamp/tags.html</link>
     <description>Recent content in Tags on bholaCodeCamp</description>
     <generator>Hugo -- 0.146.6</generator>
     <language>en-us</language>
@@ -10,23 +10,23 @@
     <atom:link href="https://rajeshbhola.github.io/bholacodecamp/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Css</title>
-      <link>https://rajeshbhola.github.io/bholacodecamp/tags/css/</link>
+      <link>https://rajeshbhola.github.io/bholacodecamp/tags/css.html</link>
       <pubDate>Mon, 21 Apr 2025 17:45:18 +0530</pubDate>
-      <guid>https://rajeshbhola.github.io/bholacodecamp/tags/css/</guid>
+      <guid>https://rajeshbhola.github.io/bholacodecamp/tags/css.html</guid>
       <description></description>
     </item>
     <item>
       <title>Git</title>
-      <link>https://rajeshbhola.github.io/bholacodecamp/tags/git/</link>
+      <link>https://rajeshbhola.github.io/bholacodecamp/tags/git.html</link>
       <pubDate>Mon, 21 Apr 2025 17:45:18 +0530</pubDate>
-      <guid>https://rajeshbhola.github.io/bholacodecamp/tags/git/</guid>
+      <guid>https://rajeshbhola.github.io/bholacodecamp/tags/git.html</guid>
       <description></description>
     </item>
     <item>
       <title>Html</title>
-      <link>https://rajeshbhola.github.io/bholacodecamp/tags/html/</link>
+      <link>https://rajeshbhola.github.io/bholacodecamp/tags/html.html</link>
       <pubDate>Mon, 21 Apr 2025 17:45:18 +0530</pubDate>
-      <guid>https://rajeshbhola.github.io/bholacodecamp/tags/html/</guid>
+      <guid>https://rajeshbhola.github.io/bholacodecamp/tags/html.html</guid>
       <description></description>
     </item>
   </channel>
