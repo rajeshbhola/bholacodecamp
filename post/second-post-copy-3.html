@@ -147,16 +147,15 @@ git commit
 </head>
 
 <body class="" id="top">
-<script>
-    if (localStorage.getItem("pref-theme") === "dark") {
-        document.body.classList.add('dark');
-    } else if (localStorage.getItem("pref-theme") === "light") {
-        document.body.classList.remove('dark')
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.body.classList.add('dark');
-    }
-
-</script>
+    <script>
+        if (localStorage.getItem("pref-theme") === "dark") {
+            document.body.classList.add('dark');
+        } else if (localStorage.getItem("pref-theme") === "light") {
+            document.body.classList.remove('dark');
+        } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            document.body.classList.add('dark');
+        }
+    </script>
 
 <header class="header">
     <nav class="nav">
@@ -165,6 +164,7 @@ git commit
                     <img src="https://rajeshbhola.github.io/bholacodecamp/images/bcc.webp" alt="" aria-label="logo"
                         height="90" class="logo-img">bholaCodeCamp</a>
             <div class="logo-switches">
+                
                 
             </div>
         </div>
@@ -195,8 +195,8 @@ git commit
                 </a>
             </li>
         </ul>
+    </nav>
 </header>
-</nav>
 <main class="main">
 
 <article class="post-single">

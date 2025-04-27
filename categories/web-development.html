@@ -72,16 +72,15 @@
 </head>
 
 <body class="list" id="top">
-<script>
-    if (localStorage.getItem("pref-theme") === "dark") {
-        document.body.classList.add('dark');
-    } else if (localStorage.getItem("pref-theme") === "light") {
-        document.body.classList.remove('dark')
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.body.classList.add('dark');
-    }
-
-</script>
+    <script>
+        if (localStorage.getItem("pref-theme") === "dark") {
+            document.body.classList.add('dark');
+        } else if (localStorage.getItem("pref-theme") === "light") {
+            document.body.classList.remove('dark');
+        } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            document.body.classList.add('dark');
+        }
+    </script>
 
 <header class="header">
     <nav class="nav">
@@ -90,6 +89,7 @@
                     <img src="https://rajeshbhola.github.io/bholacodecamp/images/bcc.webp" alt="" aria-label="logo"
                         height="90" class="logo-img">bholaCodeCamp</a>
             <div class="logo-switches">
+                
                 
             </div>
         </div>
@@ -120,8 +120,8 @@
                 </a>
             </li>
         </ul>
+    </nav>
 </header>
-</nav>
 <main class="main"> 
 <header class="page-header"><div class="breadcrumbs"><a href="https://rajeshbhola.github.io/bholacodecamp/">Home</a>&nbsp;»&nbsp;<a href="https://rajeshbhola.github.io/bholacodecamp/categories.html">Categories</a></div>
   <h1>
