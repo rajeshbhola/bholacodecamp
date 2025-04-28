@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Posts on bholaCodeCamp</title>
-    <link>https://rajeshbhola.github.io/bholacodecamp/posts.html</link>
+    <link>https://rajeshbhola.github.io/bholacodecamp/posts/</link>
     <description>Recent content in Posts on bholaCodeCamp</description>
     <generator>Hugo -- 0.146.6</generator>
     <language>en</language>
