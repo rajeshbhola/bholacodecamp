@@ -2,69 +2,45 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://rajeshbhola.github.io/bholacodecamp/</loc>
-    <lastmod>2025-04-21T17:45:18+05:30</lastmod>
+    <loc>https://example.com/</loc>
+    <lastmod>2024-06-24T10:10:00+05:30</lastmod>
   </url><url>
-    <loc>https://rajeshbhola.github.io/bholacodecamp/categories.html</loc>
-    <lastmod>2025-04-21T17:45:18+05:30</lastmod>
+    <loc>https://example.com/categories/</loc>
+    <lastmod>2024-06-24T10:10:00+05:30</lastmod>
   </url><url>
-    <loc>https://rajeshbhola.github.io/bholacodecamp/tags/css.html</loc>
-    <lastmod>2025-04-21T17:45:18+05:30</lastmod>
+    <loc>https://example.com/categories/general/</loc>
+    <lastmod>2024-06-24T10:10:00+05:30</lastmod>
   </url><url>
-    <loc>https://rajeshbhola.github.io/bholacodecamp/categories/devops.html</loc>
-    <lastmod>2025-04-21T17:45:18+05:30</lastmod>
+    <loc>https://example.com/tags/intro/</loc>
+    <lastmod>2024-06-24T10:10:00+05:30</lastmod>
   </url><url>
-    <loc>https://rajeshbhola.github.io/bholacodecamp/tags/git.html</loc>
-    <lastmod>2025-04-21T17:45:18+05:30</lastmod>
+    <loc>https://example.com/posts/my-first-post-copy-2/</loc>
+    <lastmod>2024-06-24T10:10:00+05:30</lastmod>
   </url><url>
-    <loc>https://rajeshbhola.github.io/bholacodecamp/post/first.html</loc>
-    <lastmod>2025-04-21T17:45:18+05:30</lastmod>
+    <loc>https://example.com/posts/my-first-post-copy-3/</loc>
+    <lastmod>2024-06-24T10:10:00+05:30</lastmod>
   </url><url>
-    <loc>https://rajeshbhola.github.io/bholacodecamp/tags/html.html</loc>
-    <lastmod>2025-04-21T17:45:18+05:30</lastmod>
+    <loc>https://example.com/posts/my-first-post-copy-4/</loc>
+    <lastmod>2024-06-24T10:10:00+05:30</lastmod>
   </url><url>
-    <loc>https://rajeshbhola.github.io/bholacodecamp/post.html</loc>
-    <lastmod>2025-04-21T17:45:18+05:30</lastmod>
+    <loc>https://example.com/posts/my-first-post-copy-5/</loc>
+    <lastmod>2024-06-24T10:10:00+05:30</lastmod>
   </url><url>
-    <loc>https://rajeshbhola.github.io/bholacodecamp/post/second-post.html</loc>
-    <lastmod>2025-04-21T17:45:18+05:30</lastmod>
+    <loc>https://example.com/posts/my-first-post-copy-6/</loc>
+    <lastmod>2024-06-24T10:10:00+05:30</lastmod>
   </url><url>
-    <loc>https://rajeshbhola.github.io/bholacodecamp/post/second-post-copy.html</loc>
-    <lastmod>2025-04-21T17:45:18+05:30</lastmod>
+    <loc>https://example.com/posts/my-first-post-copy/</loc>
+    <lastmod>2024-06-24T10:10:00+05:30</lastmod>
   </url><url>
-    <loc>https://rajeshbhola.github.io/bholacodecamp/post/second-post-copy-2.html</loc>
-    <lastmod>2025-04-21T17:45:18+05:30</lastmod>
+    <loc>https://example.com/posts/my-first-post/</loc>
+    <lastmod>2024-06-24T10:10:00+05:30</lastmod>
   </url><url>
-    <loc>https://rajeshbhola.github.io/bholacodecamp/post/second-post-copy-3.html</loc>
-    <lastmod>2025-04-21T17:45:18+05:30</lastmod>
+    <loc>https://example.com/posts/</loc>
+    <lastmod>2024-06-24T10:10:00+05:30</lastmod>
   </url><url>
-    <loc>https://rajeshbhola.github.io/bholacodecamp/post/second-post-copy-4.html</loc>
-    <lastmod>2025-04-21T17:45:18+05:30</lastmod>
+    <loc>https://example.com/tags/</loc>
+    <lastmod>2024-06-24T10:10:00+05:30</lastmod>
   </url><url>
-    <loc>https://rajeshbhola.github.io/bholacodecamp/post/second-post-copy-5.html</loc>
-    <lastmod>2025-04-21T17:45:18+05:30</lastmod>
-  </url><url>
-    <loc>https://rajeshbhola.github.io/bholacodecamp/post/second-post-copy-6.html</loc>
-    <lastmod>2025-04-21T17:45:18+05:30</lastmod>
-  </url><url>
-    <loc>https://rajeshbhola.github.io/bholacodecamp/post/second-post-copy-7.html</loc>
-    <lastmod>2025-04-21T17:45:18+05:30</lastmod>
-  </url><url>
-    <loc>https://rajeshbhola.github.io/bholacodecamp/post/second-post-copy-8.html</loc>
-    <lastmod>2025-04-21T17:45:18+05:30</lastmod>
-  </url><url>
-    <loc>https://rajeshbhola.github.io/bholacodecamp/post/second-post-copy-9.html</loc>
-    <lastmod>2025-04-21T17:45:18+05:30</lastmod>
-  </url><url>
-    <loc>https://rajeshbhola.github.io/bholacodecamp/tags.html</loc>
-    <lastmod>2025-04-21T17:45:18+05:30</lastmod>
-  </url><url>
-    <loc>https://rajeshbhola.github.io/bholacodecamp/categories/web-development.html</loc>
-    <lastmod>2025-04-21T17:45:18+05:30</lastmod>
-  </url><url>
-    <loc>https://rajeshbhola.github.io/bholacodecamp/springboot.html</loc>
-    <lastmod>2025-04-21T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://rajeshbhola.github.io/bholacodecamp/archives/</loc>
+    <loc>https://example.com/archives/</loc>
   </url>
 </urlset>
