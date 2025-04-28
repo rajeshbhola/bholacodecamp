@@ -10,9 +10,9 @@
     <atom:link href="https://example.com/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>General</title>
-      <link>https://example.com/categories/general/</link>
+      <link>https://example.com/categories/general.html</link>
       <pubDate>Mon, 24 Jun 2024 10:10:00 +0530</pubDate>
-      <guid>https://example.com/categories/general/</guid>
+      <guid>https://example.com/categories/general.html</guid>
       <description></description>
     </item>
   </channel>
