@@ -1,61 +1,75 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>bholaCodeCamp</title>
     <link>https://rajeshbhola.github.io/bholacodecamp/</link>
     <description>Recent content on bholaCodeCamp</description>
-    <generator>Hugo -- 0.146.6</generator>
+    <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 24 Jun 2024 10:10:00 +0530</lastBuildDate>
+    <lastBuildDate>Mon, 01 May 2023 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://rajeshbhola.github.io/bholacodecamp/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>My First Post</title>
-      <link>https://rajeshbhola.github.io/bholacodecamp/posts/my-first-post-copy-2.html</link>
-      <pubDate>Mon, 24 Jun 2024 10:10:00 +0530</pubDate>
-      <guid>https://rajeshbhola.github.io/bholacodecamp/posts/my-first-post-copy-2.html</guid>
-      <description>&lt;p&gt;Hello World! This is my first post using PaperMod.&lt;/p&gt;</description>
+      <title>Follow Me</title>
+      <link>https://rajeshbhola.github.io/bholacodecamp/contact/</link>
+      <pubDate>Mon, 01 May 2023 00:00:00 +0000</pubDate>
+      <guid>https://rajeshbhola.github.io/bholacodecamp/contact/</guid>
+      <description>&lt;div class=&#34;content&#34;&gt;&#xD;&#xA;    &lt;div class=&#34;mt-6 flex items-center space-x-4 text-gray-600&#34;&gt;&#xD;&#xA;  &lt;span class=&#34;font-semibold&#34;&gt;Share:&lt;/span&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&#xD;&#xA;&#xD;&#xA;  &lt;!-- Facebook --&gt;&#xD;&#xA;  &lt;a href=&#34;https://www.facebook.com/sharer/sharer.php?u={{ .Permalink }}&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34; aria-label=&#34;Share on Facebook&#34;&gt;&#xD;&#xA;    &lt;i class=&#34;fab fa-facebook text-xl hover:text-blue-600&#34;&gt;&lt;/i&gt;&#xD;&#xA;  &lt;/a&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&#xD;&#xA;&#xD;&#xA;  &lt;!-- Twitter --&gt;&#xD;&#xA;  &lt;a href=&#34;https://twitter.com/intent/tweet?url={{ .Permalink }}&amp;text={{ .Title }}&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34; aria-label=&#34;Share on Twitter&#34;&gt;&#xD;&#xA;    &lt;i class=&#34;fab fa-twitter text-xl hover:text-blue-400&#34;&gt;&lt;/i&gt;&#xD;&#xA;  &lt;/a&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&#xD;&#xA;&#xD;&#xA;  &lt;!-- WhatsApp --&gt;&#xD;&#xA;  &lt;a href=&#34;https://wa.me/?text={{ .Permalink }}&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34; aria-label=&#34;Share on WhatsApp&#34;&gt;&#xD;&#xA;    &lt;i class=&#34;fab fa-whatsapp text-xl hover:text-green-500&#34;&gt;&lt;/i&gt;&#xD;&#xA;  &lt;/a&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&#xD;&#xA;&#xD;&#xA;  &lt;!-- LinkedIn --&gt;&#xD;&#xA;  &lt;a href=&#34;https://www.linkedin.com/shareArticle?mini=true&amp;url={{ .Permalink }}&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34; aria-label=&#34;Share on LinkedIn&#34;&gt;&#xD;&#xA;    &lt;i class=&#34;fab fa-linkedin text-xl hover:text-blue-700&#34;&gt;&lt;/i&gt;&#xD;&#xA;  &lt;/a&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&#xD;&#xA;&#xD;&#xA;  &lt;!-- GitHub --&gt;&#xD;&#xA;  &lt;a href=&#34;https://www.github.com/rajeshbhola&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34; aria-label=&#34;Share on GitHub&#34;&gt;&#xD;&#xA;    &lt;i class=&#34;fab fa-github text-xl hover:text-blue-700&#34;&gt;&lt;/i&gt;&#xD;&#xA;  &lt;/a&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&#xD;&#xA;&lt;/div&gt;</description>
     </item>
     <item>
-      <title>My First Post</title>
-      <link>https://rajeshbhola.github.io/bholacodecamp/posts/my-first-post-copy-3.html</link>
-      <pubDate>Mon, 24 Jun 2024 10:10:00 +0530</pubDate>
-      <guid>https://rajeshbhola.github.io/bholacodecamp/posts/my-first-post-copy-3.html</guid>
-      <description>&lt;p&gt;Hello World! This is my first post using PaperMod.&lt;/p&gt;</description>
+      <title>Image Test</title>
+      <link>https://rajeshbhola.github.io/bholacodecamp/post/image-test/</link>
+      <pubDate>Fri, 14 Aug 2020 00:00:00 +0000</pubDate>
+      <guid>https://rajeshbhola.github.io/bholacodecamp/post/image-test/</guid>
+      <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris fringilla dui eu mi iaculis, sit amet congue lacus porta. Ut nec porta ex. Morbi nec massa sodales, finibus urna et, condimentum odio. Nulla ornare est ac egestas varius. Duis faucibus sapien non risus pretium vestibulum. Ut rutrum lorem ut euismod maximus. Vestibulum metus urna, ultrices nec sapien sit amet, malesuada tincidunt quam. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque ornare ipsum quis leo mattis, et tincidunt lacus feugiat. Aenean non vestibulum metus, vitae mattis sapien. Maecenas ut tortor viverra, finibus risus blandit, ultrices elit. Etiam cursus felis imperdiet ultrices ullamcorper. Ut diam nibh, porttitor at mauris laoreet, laoreet suscipit tellus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras vitae blandit quam.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>My First Post</title>
-      <link>https://rajeshbhola.github.io/bholacodecamp/posts/my-first-post-copy-4.html</link>
-      <pubDate>Mon, 24 Jun 2024 10:10:00 +0530</pubDate>
-      <guid>https://rajeshbhola.github.io/bholacodecamp/posts/my-first-post-copy-4.html</guid>
-      <description>&lt;p&gt;Hello World! This is my first post using PaperMod.&lt;/p&gt;</description>
+      <title></title>
+      <link>https://rajeshbhola.github.io/bholacodecamp/archives/</link>
+      <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
+      <guid>https://rajeshbhola.github.io/bholacodecamp/archives/</guid>
+      <description></description>
     </item>
     <item>
-      <title>My First Post</title>
-      <link>https://rajeshbhola.github.io/bholacodecamp/posts/my-first-post-copy-5.html</link>
-      <pubDate>Mon, 24 Jun 2024 10:10:00 +0530</pubDate>
-      <guid>https://rajeshbhola.github.io/bholacodecamp/posts/my-first-post-copy-5.html</guid>
-      <description>&lt;p&gt;Hello World! This is my first post using PaperMod.&lt;/p&gt;</description>
+      <title>Markdown Syntax Guide</title>
+      <link>https://rajeshbhola.github.io/bholacodecamp/post/markdown-syntax/</link>
+      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
+      <guid>https://rajeshbhola.github.io/bholacodecamp/post/markdown-syntax/</guid>
+      <description>&lt;p&gt;This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>My First Post</title>
-      <link>https://rajeshbhola.github.io/bholacodecamp/posts/my-first-post-copy-6.html</link>
-      <pubDate>Mon, 24 Jun 2024 10:10:00 +0530</pubDate>
-      <guid>https://rajeshbhola.github.io/bholacodecamp/posts/my-first-post-copy-6.html</guid>
-      <description>&lt;p&gt;Hello World! This is my first post using PaperMod.&lt;/p&gt;</description>
+      <title>Rich Content</title>
+      <link>https://rajeshbhola.github.io/bholacodecamp/post/rich-content/</link>
+      <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
+      <guid>https://rajeshbhola.github.io/bholacodecamp/post/rich-content/</guid>
+      <description>&lt;p&gt;Hugo ships with several &lt;a href=&#34;https://gohugo.io/content-management/shortcodes/#use-hugo-s-built-in-shortcodes&#34;&gt;Built-in Shortcodes&lt;/a&gt; for rich content, along with a &lt;a href=&#34;https://gohugo.io/about/hugo-and-gdpr/&#34;&gt;Privacy Config&lt;/a&gt; and a set of Simple Shortcodes that enable static and no-JS versions of various social media embeds.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>My First Post</title>
-      <link>https://rajeshbhola.github.io/bholacodecamp/posts/my-first-post-copy.html</link>
-      <pubDate>Mon, 24 Jun 2024 10:10:00 +0530</pubDate>
-      <guid>https://rajeshbhola.github.io/bholacodecamp/posts/my-first-post-copy.html</guid>
-      <description>&lt;p&gt;Hello World! This is my first post using PaperMod.&lt;/p&gt;</description>
+      <title>Placeholder Text</title>
+      <link>https://rajeshbhola.github.io/bholacodecamp/post/placeholder-text/</link>
+      <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
+      <guid>https://rajeshbhola.github.io/bholacodecamp/post/placeholder-text/</guid>
+      <description>&lt;p&gt;Lorem est tota propiore conpellat pectoribus de pectora summo.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>My First Post</title>
-      <link>https://rajeshbhola.github.io/bholacodecamp/posts/my-first-post.html</link>
-      <pubDate>Mon, 24 Jun 2024 10:10:00 +0530</pubDate>
-      <guid>https://rajeshbhola.github.io/bholacodecamp/posts/my-first-post.html</guid>
-      <description>&lt;p&gt;Hello World! This is my first post using PaperMod.&lt;/p&gt;</description>
+      <title>Math Typesetting</title>
+      <link>https://rajeshbhola.github.io/bholacodecamp/post/math-typesetting/</link>
+      <pubDate>Fri, 08 Mar 2019 00:00:00 +0000</pubDate>
+      <guid>https://rajeshbhola.github.io/bholacodecamp/post/math-typesetting/</guid>
+      <description>&lt;p&gt;Mathematical notation in a Hugo project can be enabled by using third party JavaScript libraries.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Emoji Support</title>
+      <link>https://rajeshbhola.github.io/bholacodecamp/post/emoji-support/</link>
+      <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
+      <guid>https://rajeshbhola.github.io/bholacodecamp/post/emoji-support/</guid>
+      <description>&lt;p&gt;Emoji can be enabled in a Hugo project in a number of ways.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>About</title>
+      <link>https://rajeshbhola.github.io/bholacodecamp/about/</link>
+      <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
+      <guid>https://rajeshbhola.github.io/bholacodecamp/about/</guid>
+      <description>&lt;p&gt;Written in Go, Hugo is an open source static site generator available under the &lt;a href=&#34;https://github.com/gohugoio/hugo/blob/master/LICENSE&#34;&gt;Apache Licence 2.0.&lt;/a&gt; Hugo supports TOML, YAML and JSON data file types, Markdown and HTML content files and uses shortcodes to add rich content. Other notable features are taxonomies, multilingual mode, image processing, custom output formats, HTML/CSS/JS minification and support for Sass SCSS workflows.&lt;/p&gt;&#xA;&lt;p&gt;Hugo makes use of a variety of open source projects including:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/yuin/goldmark&#34;&gt;https://github.com/yuin/goldmark&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/alecthomas/chroma&#34;&gt;https://github.com/alecthomas/chroma&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/muesli/smartcrop&#34;&gt;https://github.com/muesli/smartcrop&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/spf13/cobra&#34;&gt;https://github.com/spf13/cobra&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/spf13/viper&#34;&gt;https://github.com/spf13/viper&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Hugo is ideal for blogs, corporate websites, creative portfolios, online magazines, single page applications or even a website with thousands of pages.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
