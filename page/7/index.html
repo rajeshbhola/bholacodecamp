@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta name="generator" content="Hugo 0.146.6">
+
+<title>bholaCodeCamp</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <link rel="apple-touch-icon" sizes="180x180" href='/bholacodecamp/favicon/apple-touch-icon.png'>
+    <link rel="icon" type="image/png" sizes="32x32" href='/bholacodecamp/favicon/favicon-32x32.png'>
+    <link rel="icon" type="image/png" sizes="16x16" href='/bholacodecamp/favicon/favicon-16x16.png'>
+    <link rel="manifest" href='/bholacodecamp/favicon/site.webmanifest' />
+    <link rel="mask-icon" href=' /bholacodecamp/favicon/safari-pinned-tab.svg' color="#5bbad5" />
+    <link rel="shortcut icon" href='/bholacodecamp/favicon/favicon.ico' />
+    <meta name="theme-color" content="#ffffff">
+    <meta property="og:title" content="bholaCodeCamp" />
+    
+    
+    
+    <link rel="stylesheet" href="/bholacodecamp/css/style.min.0b9e0015e7cf8f8d993eaf045382f503d9c94c1172f9f0fa69fe1b185163551f.css" />
+    
+    <link href=' /bholacodecamp/css/blonde.min.css' rel="stylesheet" type="text/css" media="print"
+        onload="this.media=' all'">
+    
+
+
+	
+
+<meta name="description" content="Jay Jagannath! Welcome to bholaCodeCamp for technical content with easy solutions to upskill your career in the field of backend, frontend, databases, cloud, AI and many more.">
+<meta property="og:site_name" content="bholaCodeCamp">
+<meta property="og:description" content="Jay Jagannath! Welcome to bholaCodeCamp for technical content with easy solutions to upskill your career in the field of backend, frontend, databases, cloud, AI and many more.">
+<meta property="og:url" content="https://rajeshbhola.github.io/bholacodecamp/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="">
+
+<link rel="canonical" href="https://rajeshbhola.github.io/bholacodecamp/">
+
+<meta name="twitter:description" content="Jay Jagannath! Welcome to bholaCodeCamp for technical content with easy solutions to upskill your career in the field of backend, frontend, databases, cloud, AI and many more.">
+<meta property="article:published_time" content="2023-05-01T00:00:00&#43;00:00">
+<meta property="article:updated_time" content="2023-05-01T00:00:00&#43;00:00">
+
+
+
+
+
+<meta property="og:image" content="https://rajeshbhola.github.io/bholacodecamp/">
+<meta property="og:image:url" content="https://rajeshbhola.github.io/bholacodecamp/">
+
+    
+    <link rel="stylesheet" href='/bholacodecamp/css/custom.css'>
+    <i class="dark hidden"></i>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    
+
+</head>
+<body class="font-sans">
+    <div class="min-h-screen flex flex-col bg-gray-100 dark:bg-warmgray-800"><div class="bg-gray-800">
+    <div class="container max-w-screen-l mr-auto ml-auto">
+        <nav class="flex items-center justify-between flex-wrap bg-gray-800 px-6">
+
+            
+            <a href="https://rajeshbhola.github.io/bholacodecamp/" class="header flex items-center no-underline text-white mr-6" aria-label="Logo">
+                <img class="logo-img" src="/bholacodecamp/img/logo.webp" alt="bholaCodeCamp logo" width="90" loading="lazy">
+                <span class="sm:inline font-semibold text-2xl tracking-tight text-white text-logo">bholaCodeCamp</span>
+            </a>
+           
+            
+            
+            <div class="flex md:hidden">
+                <div class="py-2">
+                    <button onclick="toggleDarkMode()" class="focus:outline-none mr-1" aria-label="Darkmode Toggle Button"><i id="icon"
+                            class="icon-moon inline-flex align-middle leading-normal text-lg text-white"></i></button>
+                    <span class="text-white">|</span>
+                </div>
+                <button id="hamburgerbtn" class="flex items-center px-3 py-1 text-white hover:opacity-50" aria-label="Hamburger Button">
+                    <span class="icon-menu text-2xl"></span>
+                </button>
+            </div>
+            <div class="hidden w-full md:flex md:flex-row sm:items-center md:w-auto" id="mobileMenu">
+                <div class="text-sm lg:flex-grow">
+                </div>
+                <div class="navmenu">
+                    
+                    <a href="/bholacodecamp/"
+                        class="no-underline duration-200 block mt-4 sm:inline-block sm:mt-0 text-white hover:opacity-50 mr-4">
+                        Home
+                    </a>
+                    
+                    <a href="/bholacodecamp/about/"
+                        class="no-underline duration-200 block mt-4 sm:inline-block sm:mt-0 text-white hover:opacity-50 mr-4">
+                        About
+                    </a>
+                    
+                    <a href="/bholacodecamp/contact/"
+                        class="no-underline duration-200 block mt-4 sm:inline-block sm:mt-0 text-white hover:opacity-50 mr-4">
+                        Contact
+                    </a>
+                    
+                </div>
+                <div class="text-white invisible md:visible">
+                    <span>|</span>
+                    <button onclick="toggleDarkMode()" class="focus-visible:outline-none" aria-label="Darkmode Toggle Button"><i id="icon2"
+                            class="icon-moon hover:opacity-50 duration-200 inline-flex align-middle leading-normal text-lg ml-2"></i></button>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+<style>
+    .active {
+        display: block;
+    }
+</style>
+
+<script>
+    let hamburger = document.getElementById('hamburgerbtn');
+
+    let mobileMenu = document.getElementById('mobileMenu');
+
+    hamburger.addEventListener('click', function () {
+        mobileMenu.classList.toggle('active');
+    });
+</script>
+<div class="container max-w-screen-xl mx-auto mt-4 flex-grow px-5 lg:px-0" id="content">
+            <div class="lg:mx-5">
+<div class="grid grid-cols-3 gap-4">
+  
+  <div class="col-span-3 lg:col-span-2 mb-3">
+  
+    <h2 class="text-4xl dark:text-white"></h2>
+    
+    
+    
+    
+    
+    <a href="/bholacodecamp/post/rich-content-copy-36/">
+      <div
+    class="bg-white w-full p-3 lg:max-w-full lg:flex mt-5 transform hover:-translate-y-1 hover:shadow-md duration-500 dark:bg-warmgray-900">
+    
+    
+    
+    
+    
+    
+    
+    <div class="relative pl-4 p-2 justify-between leading-normal max-w-full w-full">
+        <div class="text-gray-900 font-bold text-xl mb-2 dark:text-white">Rich Content</div>
+        <p class="text-gray-700 text-base pb-5 dark:text-gray-300">Hugo ships with several ...</p>
+        <p class="text-sm text-gray-600 absolute items-center left-0 bottom-0 dark:text-gray-400">
+            By<span class="mr-1" style="color: rgb(127, 185, 255);"> Rajesh Bhola</span>
+            
+
+        </p>
+        <p class="text-sm text-gray-600 absolute items-center right-0 bottom-0 dark:text-gray-400">
+            <time><span class="icon-access_time mr-1"></span>2019/03/10</time>
+        </p>
+    </div>
+</div>
+    </a>
+    
+    <a href="/bholacodecamp/post/rich-content-copy-37/">
+      <div
+    class="bg-white w-full p-3 lg:max-w-full lg:flex mt-5 transform hover:-translate-y-1 hover:shadow-md duration-500 dark:bg-warmgray-900">
+    
+    
+    
+    
+    
+    
+    
+    <div class="relative pl-4 p-2 justify-between leading-normal max-w-full w-full">
+        <div class="text-gray-900 font-bold text-xl mb-2 dark:text-white">Rich Content</div>
+        <p class="text-gray-700 text-base pb-5 dark:text-gray-300">Hugo ships with several ...</p>
+        <p class="text-sm text-gray-600 absolute items-center left-0 bottom-0 dark:text-gray-400">
+            By<span class="mr-1" style="color: rgb(127, 185, 255);"> Rajesh Bhola</span>
+            
+
+        </p>
+        <p class="text-sm text-gray-600 absolute items-center right-0 bottom-0 dark:text-gray-400">
+            <time><span class="icon-access_time mr-1"></span>2019/03/10</time>
+        </p>
+    </div>
+</div>
+    </a>
+    
+    <a href="/bholacodecamp/post/rich-content-copy-38/">
+      <div
+    class="bg-white w-full p-3 lg:max-w-full lg:flex mt-5 transform hover:-translate-y-1 hover:shadow-md duration-500 dark:bg-warmgray-900">
+    
+    
+    
+    
+    
+    
+    
+    <div class="relative pl-4 p-2 justify-between leading-normal max-w-full w-full">
+        <div class="text-gray-900 font-bold text-xl mb-2 dark:text-white">Rich Content</div>
+        <p class="text-gray-700 text-base pb-5 dark:text-gray-300">Hugo ships with several ...</p>
+        <p class="text-sm text-gray-600 absolute items-center left-0 bottom-0 dark:text-gray-400">
+            By<span class="mr-1" style="color: rgb(127, 185, 255);"> Rajesh Bhola</span>
+            
+
+        </p>
+        <p class="text-sm text-gray-600 absolute items-center right-0 bottom-0 dark:text-gray-400">
+            <time><span class="icon-access_time mr-1"></span>2019/03/10</time>
+        </p>
+    </div>
+</div>
+    </a>
+    
+    <a href="/bholacodecamp/post/rich-content-copy-4/">
+      <div
+    class="bg-white w-full p-3 lg:max-w-full lg:flex mt-5 transform hover:-translate-y-1 hover:shadow-md duration-500 dark:bg-warmgray-900">
+    
+    
+    
+    
+    
+    
+    
+    <div class="relative pl-4 p-2 justify-between leading-normal max-w-full w-full">
+        <div class="text-gray-900 font-bold text-xl mb-2 dark:text-white">Rich Content</div>
+        <p class="text-gray-700 text-base pb-5 dark:text-gray-300">Hugo ships with several ...</p>
+        <p class="text-sm text-gray-600 absolute items-center left-0 bottom-0 dark:text-gray-400">
+            By<span class="mr-1" style="color: rgb(127, 185, 255);"> Rajesh Bhola</span>
+            
+
+        </p>
+        <p class="text-sm text-gray-600 absolute items-center right-0 bottom-0 dark:text-gray-400">
+            <time><span class="icon-access_time mr-1"></span>2019/03/10</time>
+        </p>
+    </div>
+</div>
+    </a>
+    
+    <a href="/bholacodecamp/post/rich-content-copy-5/">
+      <div
+    class="bg-white w-full p-3 lg:max-w-full lg:flex mt-5 transform hover:-translate-y-1 hover:shadow-md duration-500 dark:bg-warmgray-900">
+    
+    
+    
+    
+    
+    
+    
+    <div class="relative pl-4 p-2 justify-between leading-normal max-w-full w-full">
+        <div class="text-gray-900 font-bold text-xl mb-2 dark:text-white">Rich Content</div>
+        <p class="text-gray-700 text-base pb-5 dark:text-gray-300">Hugo ships with several ...</p>
+        <p class="text-sm text-gray-600 absolute items-center left-0 bottom-0 dark:text-gray-400">
+            By<span class="mr-1" style="color: rgb(127, 185, 255);"> Rajesh Bhola</span>
+            
+
+        </p>
+        <p class="text-sm text-gray-600 absolute items-center right-0 bottom-0 dark:text-gray-400">
+            <time><span class="icon-access_time mr-1"></span>2019/03/10</time>
+        </p>
+    </div>
+</div>
+    </a>
+    
+    
+
+<nav aria-label="page navigation">
+    <ul class="flex list-none my-5 p-0 justify-center">
+        
+        
+        <li class="page-item"><a href="/bholacodecamp/" rel="first" class="mx-2 py-3 px-5 rounded-full relative block border-white border-0 duration-100 bg-white text-blue-600 hover:bg-gray-400 hover:text-blue-700 dark:bg-warmgray-900 dark:border-gray-600 dark:hover:bg-warmgray-700">First</a></li>
+        
+
+        
+        <li class="page-item"><a href="/bholacodecamp/page/6/" rel="prev" class="mx-2 py-3 px-5 rounded-full relative block border-white border-0 duration-100 bg-white text-blue-600 hover:bg-gray-400 hover:text-blue-700 dark:bg-warmgray-900 dark:border-gray-600 dark:hover:bg-warmgray-700">Prev</a></li>
+        
+
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+             
+            <li class="page-item"><a href="/bholacodecamp/page/5/" class="mx-2 py-3 px-5 rounded-full relative block border-white border-0 duration-100 bg-white text-blue-600 hover:bg-gray-400 hover:text-blue-700 dark:bg-warmgray-900 dark:border-gray-600 dark:hover:bg-warmgray-700">5</a></li>
+            
+        
+            
+             
+            <li class="page-item"><a href="/bholacodecamp/page/6/" class="mx-2 py-3 px-5 rounded-full relative block border-white border-0 duration-100 bg-white text-blue-600 hover:bg-gray-400 hover:text-blue-700 dark:bg-warmgray-900 dark:border-gray-600 dark:hover:bg-warmgray-700">6</a></li>
+            
+        
+             
+            <li class="page-item active"><a href="/bholacodecamp/page/7/" class="mx-2 py-3 px-5 rounded-full relative block border-white border-0 duration-100 bg-blue-600 border-blue-600 text-white hover:border-blue-700 dark:border-gray-600">7</a></li>
+            
+        
+            
+             
+            <li class="page-item"><a href="/bholacodecamp/page/8/" class="mx-2 py-3 px-5 rounded-full relative block border-white border-0 duration-100 bg-white text-blue-600 hover:bg-gray-400 hover:text-blue-700 dark:bg-warmgray-900 dark:border-gray-600 dark:hover:bg-warmgray-700">8</a></li>
+            
+        
+            
+             
+            <li class="page-item"><a href="/bholacodecamp/page/9/" class="mx-2 py-3 px-5 rounded-full relative block border-white border-0 duration-100 bg-white text-blue-600 hover:bg-gray-400 hover:text-blue-700 dark:bg-warmgray-900 dark:border-gray-600 dark:hover:bg-warmgray-700">9</a></li>
+            
+        
+
+        
+        <li class="page-item"><a href="/bholacodecamp/page/8/" rel="next" class="mx-2 py-3 px-5 rounded-full relative block border-white border-0 duration-100  bg-white text-blue-600 hover:bg-gray-400 hover:text-blue-700 dark:bg-warmgray-900 dark:border-gray-600 dark:hover:bg-warmgray-700">Next</a></li>
+        
+
+        
+        
+        <li class="page-item"><a href="/bholacodecamp/page/9/" rel="last" class="mx-2 py-3 px-5 rounded-full relative block border-white border-0 duration-100 bg-white text-blue-600 hover:bg-gray-400 hover:text-blue-700 dark:bg-warmgray-900 dark:border-gray-600 dark:hover:bg-warmgray-700">Last</a></li>
+        
+    </ul>
+</nav>
+
+
+  </div>
+  
+    <div class="hidden lg:block lg:col-span-1">
+    
+    
+            
+            <div class="mb-3">
+    <form class="widget-search__form" role="search" method="get" action="https://google.com/search">
+        <label>
+            <input class="w-full p-3 focus:outline-none dark:bg-warmgray-900 dark:text-white placeholder-gray-700 dark:placeholder-gray-300" type="search"
+                placeholder="Search..." value="" name="q" aria-label="Search">
+        </label>
+        <input class="hidden" type="submit" value="Search">
+        <input type="hidden" name="sitesearch" value="https://rajeshbhola.github.io/bholacodecamp/" />
+    </form>
+</div>
+        
+            
+            <div class="bg-white panel mb-3 pb-5 dark:bg-warmgray-900">
+    <p class="text-xl text-center text-gray-700 py-3 px-3 dark:text-gray-300 font-bold">Archives</p>
+    
+    
+    <a class="text-center block duration-100 py-2 px-4 mx-4 hover:bg-gray-100 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-800"
+        href="https://rajeshbhola.github.io/bholacodecamp//archives/2019/03">2019/03 (43)</a>
+    
+    <a class="text-center block duration-100 py-2 px-4 mx-4 hover:bg-gray-100 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-800"
+        href="https://rajeshbhola.github.io/bholacodecamp//archives/2020/08">2020/08 (1)</a>
+    
+    
+</div>
+        
+            
+            
+<div class="bg-white panel mb-3 pb-5 dark:bg-warmgray-900">
+    <p class="text-xl text-center text-gray-700 py-5 dark:text-gray-300 font-bold">Categories</p>
+    
+    <a class="text-center block duration-100 py-2 px-4 mx-4 hover:bg-gray-100 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-800"
+        href="https://rajeshbhola.github.io/bholacodecamp//categories/syntax">Syntax</a>
+
+    
+    <a class="text-center block duration-100 py-2 px-4 mx-4 hover:bg-gray-100 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-800"
+        href="https://rajeshbhola.github.io/bholacodecamp//categories/themes">Themes</a>
+
+    
+</div>
+
+        
+            
+            
+<div class="bg-white panel mb-3 dark:bg-warmgray-900">
+    <p class="text-xl text-center text-gray-700 py-3 pl-3 dark:text-gray-300 font-bold">Tags</p>
+    <div class="panel-block p-2">
+        <a href='/bholacodecamp/tags/css'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
+                css
+            </span></a>
+        <a href='/bholacodecamp/tags/emoji'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
+                emoji
+            </span></a>
+        <a href='/bholacodecamp/tags/html'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
+                html
+            </span></a>
+        <a href='/bholacodecamp/tags/markdown'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
+                markdown
+            </span></a>
+        <a href='/bholacodecamp/tags/privacy'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
+                privacy
+            </span></a>
+        <a href='/bholacodecamp/tags/shortcodes'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
+                shortcodes
+            </span></a>
+        <a href='/bholacodecamp/tags/text'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
+                text
+            </span></a>
+        <a href='/bholacodecamp/tags/themes'>
+            <span
+                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
+                themes
+            </span></a>
+    </div>
+</div>
+
+
+        
+            
+            
+
+<div class="bg-white panel mb-3 pb-5 dark:bg-warmgray-900">
+    <p class="text-xl text-center text-gray-700 py-5 dark:text-gray-300 font-bold">Recent Posts</p>
+    <div class="mx-6">
+        <a href="/bholacodecamp/post/image-test/" class="">
+            <div
+                class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
+                <div class="px-2">
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">Image Test</div>
+                    <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
+                        <time><span class="icon-access_time mr-1"></span>2020/08/14</time>
+                    </p>
+                </div>
+            </div>
+        </a>
+        <a href="/bholacodecamp/post/markdown-syntax/" class="">
+            <div
+                class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
+                <div class="px-2">
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">Markdown Syntax Guide</div>
+                    <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
+                        <time><span class="icon-access_time mr-1"></span>2019/03/11</time>
+                    </p>
+                </div>
+            </div>
+        </a>
+        <a href="/bholacodecamp/post/rich-content-copy-10/" class="">
+            <div
+                class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
+                <div class="px-2">
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">Rich Content</div>
+                    <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
+                        <time><span class="icon-access_time mr-1"></span>2019/03/10</time>
+                    </p>
+                </div>
+            </div>
+        </a>
+        <a href="/bholacodecamp/post/rich-content-copy-11/" class="">
+            <div
+                class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
+                <div class="px-2">
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">Rich Content</div>
+                    <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
+                        <time><span class="icon-access_time mr-1"></span>2019/03/10</time>
+                    </p>
+                </div>
+            </div>
+        </a>
+        <a href="/bholacodecamp/post/rich-content-copy-12/" class="">
+            <div
+                class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
+                <div class="px-2">
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">Rich Content</div>
+                    <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
+                        <time><span class="icon-access_time mr-1"></span>2019/03/10</time>
+                    </p>
+                </div>
+            </div>
+        </a>
+    </div>
+</div>
+
+        
+    
+</div>
+  
+</div>
+
+            </div>
+        </div><footer class="bg-gray-800 text-white p-6">
+  
+  <div class="container max-w-screen-xl mr-auto ml-auto">
+    <p>&copy; 2025 <a href="https://rajeshbhola.github.io/bholacodecamp/" class="duration-200 hover:opacity-50">bholaCodeCamp</a>
+    </p>
+    <p>Developed by <a href="https://rajeshbhola.github.io/" class="duration-200 hover:opacity-50">Rajesh Bhola</a> | <a
+        href="https://github.com/" class="duration-200 hover:opacity-50">privacy policy</a></p>
+  </div>
+  
+  <script>
+    var icon = document.getElementById("icon");
+    var icon2 = document.getElementById("icon2");
+    
+    if (document.documentElement.classList.contains("dark") || localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      icon.classList.remove("icon-moon");
+      icon.classList.add("icon-sun");
+      icon2.classList.remove("icon-moon");
+      icon2.classList.add("icon-sun");
+      document.documentElement.classList.add('dark')
+    } else {
+      document.documentElement.classList.remove('dark')
+    }
+    function toggleDarkMode() {
+      if (document.documentElement.classList.contains('dark')) {
+        icon.classList.remove("icon-sun");
+        icon.classList.add("icon-moon");
+        icon2.classList.remove("icon-sun");
+        icon2.classList.add("icon-moon");
+        document.documentElement.classList.remove('dark')
+        localStorage.theme = 'light'
+      } else {
+        icon.classList.remove("icon-moon");
+        icon.classList.add("icon-sun");
+        icon2.classList.remove("icon-moon");
+        icon2.classList.add("icon-sun");
+        document.documentElement.classList.add('dark')
+        localStorage.theme = 'dark'
+      }
+    }
+  </script>
+</footer></div>
+</body>
+
+</html>
