@@ -6,8 +6,15 @@
     <description>Recent content on bholaCodeCamp</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 01 May 2023 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 19 May 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://rajeshbhola.github.io/bholacodecamp/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to Clone Your Company&#39;s Project Repository</title>
+      <link>https://rajeshbhola.github.io/bholacodecamp/post/rich-content-copy-2/</link>
+      <pubDate>Mon, 19 May 2025 00:00:00 +0000</pubDate>
+      <guid>https://rajeshbhola.github.io/bholacodecamp/post/rich-content-copy-2/</guid>
+      <description>&lt;h1&gt;How to Clone Your Company&#39;s Project Repository&lt;/h1&gt;&#xD;&#xA;&#xD;&#xA;  &lt;h2&gt;Introduction&lt;/h2&gt;&#xD;&#xA;  &lt;p&gt;When joining a new team or starting a new role, one of your first tasks might be to clone the company’s codebase so you can start contributing. This article walks you through the &lt;strong&gt;process of cloning a private Git/GitLab repository&lt;/strong&gt; used in a professional environment — securely and correctly.&lt;/p&gt;&#xD;&#xA;&#xD;&#xA;  &lt;h2&gt;🔐 Prerequisites:&lt;/h2&gt;&#xD;&#xA;  &lt;p&gt;Before you can clone the repo, make sure you have:&lt;/p&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;&lt;strong&gt;Access permissions&lt;/strong&gt; to the repository (usually granted by an admin or team lead).&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;A &lt;strong&gt;GitLab or GitHub account&lt;/strong&gt; with access to the organization/project.&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Git installed on your machine (&lt;code&gt;git --version&lt;/code&gt; should return a version number).&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;SSH key added to your Git provider (recommended for secure authentication).&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&#xD;&#xA;  &lt;h2&gt;✅ Step-by-Step to Cloning a Repo&lt;/h2&gt;&#xD;&#xA;&#xD;&#xA;  &lt;h3&gt;1. Get the Repository URL&lt;/h3&gt;&#xD;&#xA;  &lt;p&gt;Log into your company&#39;s Git platform (e.g., GitLab, GitHub, Bitbucket). Navigate to the project repository and copy the &lt;strong&gt;SSH or HTTPS clone URL&lt;/strong&gt;.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Follow Me</title>
       <link>https://rajeshbhola.github.io/bholacodecamp/contact/</link>
@@ -104,13 +111,6 @@
       <link>https://rajeshbhola.github.io/bholacodecamp/post/rich-content-copy-19/</link>
       <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
       <guid>https://rajeshbhola.github.io/bholacodecamp/post/rich-content-copy-19/</guid>
-      <description>&lt;p&gt;Hugo ships with several &lt;a href=&#34;https://gohugo.io/content-management/shortcodes/#use-hugo-s-built-in-shortcodes&#34;&gt;Built-in Shortcodes&lt;/a&gt; for rich content, along with a &lt;a href=&#34;https://gohugo.io/about/hugo-and-gdpr/&#34;&gt;Privacy Config&lt;/a&gt; and a set of Simple Shortcodes that enable static and no-JS versions of various social media embeds.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Rich Content</title>
-      <link>https://rajeshbhola.github.io/bholacodecamp/post/rich-content-copy-2/</link>
-      <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
-      <guid>https://rajeshbhola.github.io/bholacodecamp/post/rich-content-copy-2/</guid>
       <description>&lt;p&gt;Hugo ships with several &lt;a href=&#34;https://gohugo.io/content-management/shortcodes/#use-hugo-s-built-in-shortcodes&#34;&gt;Built-in Shortcodes&lt;/a&gt; for rich content, along with a &lt;a href=&#34;https://gohugo.io/about/hugo-and-gdpr/&#34;&gt;Privacy Config&lt;/a&gt; and a set of Simple Shortcodes that enable static and no-JS versions of various social media embeds.&lt;/p&gt;</description>
     </item>
     <item>
@@ -331,11 +331,11 @@
       <description>&lt;p&gt;Emoji can be enabled in a Hugo project in a number of ways.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>About</title>
+      <title>About Me</title>
       <link>https://rajeshbhola.github.io/bholacodecamp/about/</link>
       <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
       <guid>https://rajeshbhola.github.io/bholacodecamp/about/</guid>
-      <description>&lt;p&gt;I am a full-stack Java developer with several years of experience. Skilled in problem-solving, bug resolution, feature implementation, and effective communication, I excel in adapting to new challenges quickly.&lt;/p&gt;&#xA;&lt;p&gt;I am passionate about leveraging cutting-edge technologies to craft innovative and scalable solutions.&lt;/p&gt;&#xA;&lt;p&gt;My focus is on understanding each client’s unique requirements and delivering high-quality, reliable results that exceed expectations.&lt;/p&gt;&#xA;&lt;p&gt;At bholaCodeCamp, I am dedicated to providing solutions that not only meet current needs but are also future-ready.&lt;/p&gt;</description>
+      <description>&lt;br&gt;&#xD;&#xA;&lt;img &#xD;&#xA;    style=&#34;height:auto; &#xD;&#xA;    border-radius: 50%;&#xD;&#xA;    object-fit: cover;&#xD;&#xA;    border: 3px solid #d4af37;&#xD;&#xA;    box-shadow:&#xD;&#xA;    0 0 10px #FFD700,&#xD;&#xA;    0 0 20px #FFC300,&#xD;&#xA;    0 0 30px #FFB800,&#xD;&#xA;    0 0 40px #FFA500,&#xD;&#xA;    0 0 40px #FFD700,&#xD;&#xA;    0 0 40px #FF8C00;&#xD;&#xA;    margin-left: 20px;&#34; &#xD;&#xA;    alt=&#34;&#34; &#xD;&#xA;    src=&#34;https://avatars.githubusercontent.com/u/82930824?v=4&#34; &#xD;&#xA;    width=&#34;200&#34; &#xD;&#xA;    height=&#34;200&#34;&#xD;&#xA;    class=&#34;imgs&#34;&#xD;&#xA;&gt;&#xD;&#xA;&lt;h2&gt;Rajesh Bhola&lt;/h2&gt;&#xD;&#xA;&#xA;&lt;p&gt;I am a full-stack Java developer with several years of experience. Skilled in problem-solving, bug resolution, feature implementation, and effective communication, I excel in adapting to new challenges quickly.&lt;/p&gt;&#xA;&lt;p&gt;I am passionate about leveraging cutting-edge technologies to craft innovative and scalable solutions.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

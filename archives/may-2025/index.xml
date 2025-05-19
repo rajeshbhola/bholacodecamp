@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>May 2025 on bholaCodeCamp</title>
+    <link>https://rajeshbhola.github.io/bholacodecamp/archives/may-2025/</link>
+    <description>Recent content in May 2025 on bholaCodeCamp</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 19 May 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://rajeshbhola.github.io/bholacodecamp/archives/may-2025/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to Clone Your Company&#39;s Project Repository</title>
+      <link>https://rajeshbhola.github.io/bholacodecamp/post/rich-content-copy-2/</link>
+      <pubDate>Mon, 19 May 2025 00:00:00 +0000</pubDate>
+      <guid>https://rajeshbhola.github.io/bholacodecamp/post/rich-content-copy-2/</guid>
+      <description>&lt;h1&gt;How to Clone Your Company&#39;s Project Repository&lt;/h1&gt;&#xD;&#xA;&#xD;&#xA;  &lt;h2&gt;Introduction&lt;/h2&gt;&#xD;&#xA;  &lt;p&gt;When joining a new team or starting a new role, one of your first tasks might be to clone the company’s codebase so you can start contributing. This article walks you through the &lt;strong&gt;process of cloning a private Git/GitLab repository&lt;/strong&gt; used in a professional environment — securely and correctly.&lt;/p&gt;&#xD;&#xA;&#xD;&#xA;  &lt;h2&gt;🔐 Prerequisites:&lt;/h2&gt;&#xD;&#xA;  &lt;p&gt;Before you can clone the repo, make sure you have:&lt;/p&gt;&#xD;&#xA;  &lt;ul&gt;&#xD;&#xA;    &lt;li&gt;&lt;strong&gt;Access permissions&lt;/strong&gt; to the repository (usually granted by an admin or team lead).&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;A &lt;strong&gt;GitLab or GitHub account&lt;/strong&gt; with access to the organization/project.&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;Git installed on your machine (&lt;code&gt;git --version&lt;/code&gt; should return a version number).&lt;/li&gt;&#xD;&#xA;    &lt;li&gt;SSH key added to your Git provider (recommended for secure authentication).&lt;/li&gt;&#xD;&#xA;  &lt;/ul&gt;&#xD;&#xA;&#xD;&#xA;  &lt;h2&gt;✅ Step-by-Step to Cloning a Repo&lt;/h2&gt;&#xD;&#xA;&#xD;&#xA;  &lt;h3&gt;1. Get the Repository URL&lt;/h3&gt;&#xD;&#xA;  &lt;p&gt;Log into your company&#39;s Git platform (e.g., GitLab, GitHub, Bitbucket). Navigate to the project repository and copy the &lt;strong&gt;SSH or HTTPS clone URL&lt;/strong&gt;.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
