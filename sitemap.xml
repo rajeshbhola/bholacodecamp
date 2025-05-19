@@ -35,9 +35,6 @@
     <loc>https://rajeshbhola.github.io/bholacodecamp/tags/themes/</loc>
     <lastmod>2020-08-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://rajeshbhola.github.io/bholacodecamp/archives/</loc>
-    <lastmod>2019-05-28T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://rajeshbhola.github.io/bholacodecamp/archives/2019/03/</loc>
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
   </url><url>
@@ -199,5 +196,7 @@
   </url><url>
     <loc>https://rajeshbhola.github.io/bholacodecamp/about/</loc>
     <lastmod>2019-02-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://rajeshbhola.github.io/bholacodecamp/archives/</loc>
   </url>
 </urlset>
