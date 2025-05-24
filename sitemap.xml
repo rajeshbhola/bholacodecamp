@@ -23,8 +23,11 @@
     <loc>https://rajeshbhola.github.io/bholacodecamp/tags/</loc>
     <lastmod>2025-05-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://rajeshbhola.github.io/bholacodecamp/contact/</loc>
-    <lastmod>2023-05-01T00:00:00+00:00</lastmod>
+    <loc>https://rajeshbhola.github.io/bholacodecamp/privacy-policy/</loc>
+    <lastmod>2024-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://rajeshbhola.github.io/bholacodecamp/terms-of-service/</loc>
+    <lastmod>2024-01-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://rajeshbhola.github.io/bholacodecamp/archives/2020/08/</loc>
     <lastmod>2020-08-14T00:00:00+00:00</lastmod>
@@ -198,5 +201,7 @@
     <lastmod>2019-02-28T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://rajeshbhola.github.io/bholacodecamp/archives/</loc>
+  </url><url>
+    <loc>https://rajeshbhola.github.io/bholacodecamp/contact/</loc>
   </url>
 </urlset>

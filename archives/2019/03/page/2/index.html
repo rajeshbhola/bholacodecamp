@@ -6,18 +6,18 @@
 <title>bholaCodeCamp | 2019/03</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
-    <link rel="apple-touch-icon" sizes="180x180" href='/bholacodecamp/favicon/logo.webp'>
-    <link rel="icon" type="image/png" sizes="32x32" href='/bholacodecamp/favicon/logo.webp'>
-    <link rel="icon" type="image/png" sizes="16x16" href='/bholacodecamp/favicon/logo.webp'>
+    <link rel="apple-touch-icon" sizes="180x180" href='/bholacodecamp/favicon/apple-touch-icon.png'>
+    <link rel="icon" type="image/png" sizes="32x32" href='/bholacodecamp/favicon/favicon-32x32.png'>
+    <link rel="icon" type="image/png" sizes="16x16" href='/bholacodecamp/favicon/favicon-16x16.png'>
     <link rel="manifest" href='/bholacodecamp/favicon/site.webmanifest' />
     <link rel="mask-icon" href=' /bholacodecamp/favicon/safari-pinned-tab.svg' color="#5bbad5" />
-    <link rel="shortcut icon" href='/bholacodecamp/favicon/favicon.ico' />
+    <link rel="shortcut icon" href='/bholacodecamp/favicon/android-chrome-512x512.png' />
     <meta name="theme-color" content="#ffffff">
     <meta property="og:title" content="bholaCodeCamp | 2019/03" />
     
     
     
-    <link rel="stylesheet" href="/bholacodecamp/css/style.min.9f8247f6d964cd5bb3140a6b38cdd6f4e9dc81eb6d6332d061643bc04a98880c.css" />
+    <link rel="stylesheet" href="/bholacodecamp/css/style.min.385a75a208d4588e09c4ff6aedb3dbef3d569394340108d65ced03d73a210e6b.css" />
     
     <link href=' /bholacodecamp/css/bholacodecamp.min.css' rel="stylesheet" type="text/css" media="print"
         onload="this.media=' all'">
@@ -57,18 +57,16 @@
 
 </head>
 <body class="font-sans">
-    <div class="min-h-screen flex flex-col bg-gray-100 dark:bg-warmgray-800"><div class="bg-gray-800">
+    <div class="min-h-screen flex flex-col bg-gray-100 dark:bg-warmgray-800">
+<div class="bg-gray-800">
     <div class="container max-w-screen-l mr-auto ml-auto">
         <nav class="flex items-center justify-between flex-wrap bg-gray-800 px-6">
 
-            
             <a href="https://rajeshbhola.github.io/bholacodecamp/" class="header flex items-center no-underline text-white mr-6" aria-label="Logo">
                 <img class="logo-img" src="/bholacodecamp/img/logo.webp" alt="bholaCodeCamp logo" width="90" loading="lazy">
                 <span class="sm:inline font-semibold text-2xl tracking-tight text-white text-logo font-jaturat">bholaCodeCamp</span>
             </a>
-           
-            
-            
+
             <div class="flex md:hidden">
                 <div class="py-2">
                     <button onclick="toggleDarkMode()" class="focus:outline-none mr-1" aria-label="Darkmode Toggle Button"><i id="icon"
@@ -86,16 +84,25 @@
                     
                     <a href="/bholacodecamp/"
                         class="no-underline duration-200 block mt-4 sm:inline-block sm:mt-0 text-white hover:opacity-50 mr-4">
+                        <i class="fa fa-home mr-1"></i>
+                        
+                        
                         Home
                     </a>
                     
                     <a href="/bholacodecamp/about/"
                         class="no-underline duration-200 block mt-4 sm:inline-block sm:mt-0 text-white hover:opacity-50 mr-4">
+                        
+                        <i class="fa fa-user mr-1"></i>
+                        
                         About
                     </a>
                     
                     <a href="/bholacodecamp/contact/"
                         class="no-underline duration-200 block mt-4 sm:inline-block sm:mt-0 text-white hover:opacity-50 mr-4">
+                        
+                        
+                        <i class="fa fa-envelope mr-1"></i>
                         Contact
                     </a>
                     
@@ -117,14 +124,11 @@
 
 <script>
     let hamburger = document.getElementById('hamburgerbtn');
-
     let mobileMenu = document.getElementById('mobileMenu');
-
     hamburger.addEventListener('click', function () {
         mobileMenu.classList.toggle('active');
     });
-</script>
-<div class="container max-w-screen-xl mx-auto mt-4 flex-grow px-5 lg:px-0" id="content">
+</script><div class="container max-w-screen-xl mx-auto mt-4 flex-grow px-5 lg:px-0" id="content">
             <div class="lg:mx-5">
 <div class="grid grid-cols-3 gap-4">
   
@@ -140,24 +144,21 @@
       <div
     class="bg-white w-full p-3 lg:max-w-full lg:flex mt-5 transform hover:-translate-y-1 hover:shadow-md duration-500 dark:bg-warmgray-900">
     
-    
-    
-    
-    
-    
+      <img
+        alt="thumbnail"
+        id="thumb"
+        class="w-40 h-32 object-cover rounded-lg border-2 border-gray-200 dark:border-warmgray-700"
+        src='https://images.unsplash.com/photo-1689267166689-795f4f536819?q=80&amp;w=2940&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.1.0&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' />
     
     <div class="relative pl-4 p-2 justify-between leading-normal max-w-full w-full">
         <div class="text-gray-900 font-bold text-xl mb-2 dark:text-white">Rich Content</div>
         <p class="text-gray-700 text-base pb-5 dark:text-gray-300">Hugo ships with several ...</p>
         <p class="text-sm text-gray-600 absolute items-center left-0 bottom-0 dark:text-gray-400">
             By<span class="mr-1" style="color: rgb(127, 185, 255);"> Rajesh Bhola</span>
-            
-
         </p>
         <p class="text-sm text-gray-600 absolute items-center right-0 bottom-0 dark:text-gray-400">
             <span class="mr-2"></span>
               10 Mar 2019
-              </span>
         </p>
     </div>
 </div>
@@ -167,24 +168,21 @@
       <div
     class="bg-white w-full p-3 lg:max-w-full lg:flex mt-5 transform hover:-translate-y-1 hover:shadow-md duration-500 dark:bg-warmgray-900">
     
-    
-    
-    
-    
-    
+      <img
+        alt="thumbnail"
+        id="thumb"
+        class="w-40 h-32 object-cover rounded-lg border-2 border-gray-200 dark:border-warmgray-700"
+        src='https://images.unsplash.com/photo-1689267166689-795f4f536819?q=80&amp;w=2940&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.1.0&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' />
     
     <div class="relative pl-4 p-2 justify-between leading-normal max-w-full w-full">
         <div class="text-gray-900 font-bold text-xl mb-2 dark:text-white">Rich Content</div>
         <p class="text-gray-700 text-base pb-5 dark:text-gray-300">Hugo ships with several ...</p>
         <p class="text-sm text-gray-600 absolute items-center left-0 bottom-0 dark:text-gray-400">
             By<span class="mr-1" style="color: rgb(127, 185, 255);"> Rajesh Bhola</span>
-            
-
         </p>
         <p class="text-sm text-gray-600 absolute items-center right-0 bottom-0 dark:text-gray-400">
             <span class="mr-2"></span>
               10 Mar 2019
-              </span>
         </p>
     </div>
 </div>
@@ -194,24 +192,21 @@
       <div
     class="bg-white w-full p-3 lg:max-w-full lg:flex mt-5 transform hover:-translate-y-1 hover:shadow-md duration-500 dark:bg-warmgray-900">
     
-    
-    
-    
-    
-    
+      <img
+        alt="thumbnail"
+        id="thumb"
+        class="w-40 h-32 object-cover rounded-lg border-2 border-gray-200 dark:border-warmgray-700"
+        src='https://images.unsplash.com/photo-1689267166689-795f4f536819?q=80&amp;w=2940&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.1.0&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' />
     
     <div class="relative pl-4 p-2 justify-between leading-normal max-w-full w-full">
         <div class="text-gray-900 font-bold text-xl mb-2 dark:text-white">Rich Content</div>
         <p class="text-gray-700 text-base pb-5 dark:text-gray-300">Hugo ships with several ...</p>
         <p class="text-sm text-gray-600 absolute items-center left-0 bottom-0 dark:text-gray-400">
             By<span class="mr-1" style="color: rgb(127, 185, 255);"> Rajesh Bhola</span>
-            
-
         </p>
         <p class="text-sm text-gray-600 absolute items-center right-0 bottom-0 dark:text-gray-400">
             <span class="mr-2"></span>
               10 Mar 2019
-              </span>
         </p>
     </div>
 </div>
@@ -221,24 +216,21 @@
       <div
     class="bg-white w-full p-3 lg:max-w-full lg:flex mt-5 transform hover:-translate-y-1 hover:shadow-md duration-500 dark:bg-warmgray-900">
     
-    
-    
-    
-    
-    
+      <img
+        alt="thumbnail"
+        id="thumb"
+        class="w-40 h-32 object-cover rounded-lg border-2 border-gray-200 dark:border-warmgray-700"
+        src='https://images.unsplash.com/photo-1689267166689-795f4f536819?q=80&amp;w=2940&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.1.0&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' />
     
     <div class="relative pl-4 p-2 justify-between leading-normal max-w-full w-full">
         <div class="text-gray-900 font-bold text-xl mb-2 dark:text-white">Rich Content</div>
         <p class="text-gray-700 text-base pb-5 dark:text-gray-300">Hugo ships with several ...</p>
         <p class="text-sm text-gray-600 absolute items-center left-0 bottom-0 dark:text-gray-400">
             By<span class="mr-1" style="color: rgb(127, 185, 255);"> Rajesh Bhola</span>
-            
-
         </p>
         <p class="text-sm text-gray-600 absolute items-center right-0 bottom-0 dark:text-gray-400">
             <span class="mr-2"></span>
               10 Mar 2019
-              </span>
         </p>
     </div>
 </div>
@@ -248,24 +240,21 @@
       <div
     class="bg-white w-full p-3 lg:max-w-full lg:flex mt-5 transform hover:-translate-y-1 hover:shadow-md duration-500 dark:bg-warmgray-900">
     
-    
-    
-    
-    
-    
+      <img
+        alt="thumbnail"
+        id="thumb"
+        class="w-40 h-32 object-cover rounded-lg border-2 border-gray-200 dark:border-warmgray-700"
+        src='https://images.unsplash.com/photo-1689267166689-795f4f536819?q=80&amp;w=2940&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.1.0&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' />
     
     <div class="relative pl-4 p-2 justify-between leading-normal max-w-full w-full">
         <div class="text-gray-900 font-bold text-xl mb-2 dark:text-white">Rich Content</div>
         <p class="text-gray-700 text-base pb-5 dark:text-gray-300">Hugo ships with several ...</p>
         <p class="text-sm text-gray-600 absolute items-center left-0 bottom-0 dark:text-gray-400">
             By<span class="mr-1" style="color: rgb(127, 185, 255);"> Rajesh Bhola</span>
-            
-
         </p>
         <p class="text-sm text-gray-600 absolute items-center right-0 bottom-0 dark:text-gray-400">
             <span class="mr-2"></span>
               10 Mar 2019
-              </span>
         </p>
     </div>
 </div>
@@ -275,24 +264,21 @@
       <div
     class="bg-white w-full p-3 lg:max-w-full lg:flex mt-5 transform hover:-translate-y-1 hover:shadow-md duration-500 dark:bg-warmgray-900">
     
-    
-    
-    
-    
-    
+      <img
+        alt="thumbnail"
+        id="thumb"
+        class="w-40 h-32 object-cover rounded-lg border-2 border-gray-200 dark:border-warmgray-700"
+        src='https://images.unsplash.com/photo-1689267166689-795f4f536819?q=80&amp;w=2940&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.1.0&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' />
     
     <div class="relative pl-4 p-2 justify-between leading-normal max-w-full w-full">
         <div class="text-gray-900 font-bold text-xl mb-2 dark:text-white">Rich Content</div>
         <p class="text-gray-700 text-base pb-5 dark:text-gray-300">Hugo ships with several ...</p>
         <p class="text-sm text-gray-600 absolute items-center left-0 bottom-0 dark:text-gray-400">
             By<span class="mr-1" style="color: rgb(127, 185, 255);"> Rajesh Bhola</span>
-            
-
         </p>
         <p class="text-sm text-gray-600 absolute items-center right-0 bottom-0 dark:text-gray-400">
             <span class="mr-2"></span>
               10 Mar 2019
-              </span>
         </p>
     </div>
 </div>
@@ -302,24 +288,21 @@
       <div
     class="bg-white w-full p-3 lg:max-w-full lg:flex mt-5 transform hover:-translate-y-1 hover:shadow-md duration-500 dark:bg-warmgray-900">
     
-    
-    
-    
-    
-    
+      <img
+        alt="thumbnail"
+        id="thumb"
+        class="w-40 h-32 object-cover rounded-lg border-2 border-gray-200 dark:border-warmgray-700"
+        src='https://images.unsplash.com/photo-1689267166689-795f4f536819?q=80&amp;w=2940&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.1.0&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' />
     
     <div class="relative pl-4 p-2 justify-between leading-normal max-w-full w-full">
         <div class="text-gray-900 font-bold text-xl mb-2 dark:text-white">Rich Content</div>
         <p class="text-gray-700 text-base pb-5 dark:text-gray-300">Hugo ships with several ...</p>
         <p class="text-sm text-gray-600 absolute items-center left-0 bottom-0 dark:text-gray-400">
             By<span class="mr-1" style="color: rgb(127, 185, 255);"> Rajesh Bhola</span>
-            
-
         </p>
         <p class="text-sm text-gray-600 absolute items-center right-0 bottom-0 dark:text-gray-400">
             <span class="mr-2"></span>
               10 Mar 2019
-              </span>
         </p>
     </div>
 </div>
@@ -329,24 +312,21 @@
       <div
     class="bg-white w-full p-3 lg:max-w-full lg:flex mt-5 transform hover:-translate-y-1 hover:shadow-md duration-500 dark:bg-warmgray-900">
     
-    
-    
-    
-    
-    
+      <img
+        alt="thumbnail"
+        id="thumb"
+        class="w-40 h-32 object-cover rounded-lg border-2 border-gray-200 dark:border-warmgray-700"
+        src='https://images.unsplash.com/photo-1689267166689-795f4f536819?q=80&amp;w=2940&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.1.0&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' />
     
     <div class="relative pl-4 p-2 justify-between leading-normal max-w-full w-full">
         <div class="text-gray-900 font-bold text-xl mb-2 dark:text-white">Rich Content</div>
         <p class="text-gray-700 text-base pb-5 dark:text-gray-300">Hugo ships with several ...</p>
         <p class="text-sm text-gray-600 absolute items-center left-0 bottom-0 dark:text-gray-400">
             By<span class="mr-1" style="color: rgb(127, 185, 255);"> Rajesh Bhola</span>
-            
-
         </p>
         <p class="text-sm text-gray-600 absolute items-center right-0 bottom-0 dark:text-gray-400">
             <span class="mr-2"></span>
               10 Mar 2019
-              </span>
         </p>
     </div>
 </div>
@@ -356,24 +336,21 @@
       <div
     class="bg-white w-full p-3 lg:max-w-full lg:flex mt-5 transform hover:-translate-y-1 hover:shadow-md duration-500 dark:bg-warmgray-900">
     
-    
-    
-    
-    
-    
+      <img
+        alt="thumbnail"
+        id="thumb"
+        class="w-40 h-32 object-cover rounded-lg border-2 border-gray-200 dark:border-warmgray-700"
+        src='https://images.unsplash.com/photo-1689267166689-795f4f536819?q=80&amp;w=2940&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.1.0&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' />
     
     <div class="relative pl-4 p-2 justify-between leading-normal max-w-full w-full">
         <div class="text-gray-900 font-bold text-xl mb-2 dark:text-white">Rich Content</div>
         <p class="text-gray-700 text-base pb-5 dark:text-gray-300">Hugo ships with several ...</p>
         <p class="text-sm text-gray-600 absolute items-center left-0 bottom-0 dark:text-gray-400">
             By<span class="mr-1" style="color: rgb(127, 185, 255);"> Rajesh Bhola</span>
-            
-
         </p>
         <p class="text-sm text-gray-600 absolute items-center right-0 bottom-0 dark:text-gray-400">
             <span class="mr-2"></span>
               10 Mar 2019
-              </span>
         </p>
     </div>
 </div>
@@ -383,24 +360,21 @@
       <div
     class="bg-white w-full p-3 lg:max-w-full lg:flex mt-5 transform hover:-translate-y-1 hover:shadow-md duration-500 dark:bg-warmgray-900">
     
-    
-    
-    
-    
-    
+      <img
+        alt="thumbnail"
+        id="thumb"
+        class="w-40 h-32 object-cover rounded-lg border-2 border-gray-200 dark:border-warmgray-700"
+        src='https://images.unsplash.com/photo-1689267166689-795f4f536819?q=80&amp;w=2940&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.1.0&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' />
     
     <div class="relative pl-4 p-2 justify-between leading-normal max-w-full w-full">
         <div class="text-gray-900 font-bold text-xl mb-2 dark:text-white">Rich Content</div>
         <p class="text-gray-700 text-base pb-5 dark:text-gray-300">Hugo ships with several ...</p>
         <p class="text-sm text-gray-600 absolute items-center left-0 bottom-0 dark:text-gray-400">
             By<span class="mr-1" style="color: rgb(127, 185, 255);"> Rajesh Bhola</span>
-            
-
         </p>
         <p class="text-sm text-gray-600 absolute items-center right-0 bottom-0 dark:text-gray-400">
             <span class="mr-2"></span>
               10 Mar 2019
-              </span>
         </p>
     </div>
 </div>
@@ -479,60 +453,89 @@
                 
 <div class="bg-white panel w-full mb-3 dark:bg-warmgray-900">
     <p class="text-xl text-center text-gray-700 py-3 pl-3 dark:text-gray-300 font-bold">Tags</p>
-    <div class="panel-block p-2">
-        <a href='/bholacodecamp/tags/css'>
-            <span
-                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
-                css (1)
-            </span></a>
-        <a href='/bholacodecamp/tags/emoji'>
-            <span
-                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
-                emoji (1)
-            </span></a>
-        <a href='/bholacodecamp/tags/git'>
-            <span
-                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
-                git (1)
-            </span></a>
-        <a href='/bholacodecamp/tags/gitlab'>
-            <span
-                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
-                gitlab (1)
-            </span></a>
-        <a href='/bholacodecamp/tags/html'>
-            <span
-                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
-                html (1)
-            </span></a>
-        <a href='/bholacodecamp/tags/markdown'>
-            <span
-                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
-                markdown (2)
-            </span></a>
-        <a href='/bholacodecamp/tags/privacy'>
-            <span
-                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
-                privacy (38)
-            </span></a>
-        <a href='/bholacodecamp/tags/shortcodes'>
-            <span
-                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
-                shortcodes (38)
-            </span></a>
-        <a href='/bholacodecamp/tags/text'>
-            <span
-                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
-                text (1)
-            </span></a>
-        <a href='/bholacodecamp/tags/themes'>
-            <span
-                class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
-                themes (2)
-            </span></a>
+    <div class="panel-block p-2 flex flex-wrap gap-2">
+        <a href='/bholacodecamp/tags/css'
+           class="inline-block px-4 py-1 rounded-full text-white text-sm font-semibold shadow hover:opacity-90 transition mb-2 mr-2"
+           style="background: linear-gradient(90deg, #6793d0, #4fade7);">
+            css
+            <span class="ml-2 inline-block bg-white text-blue-600 rounded-full px-2 py-0.5 text-xs font-bold align-middle">
+                1
+            </span>
+        </a>
+        <a href='/bholacodecamp/tags/emoji'
+           class="inline-block px-4 py-1 rounded-full text-white text-sm font-semibold shadow hover:opacity-90 transition mb-2 mr-2"
+           style="background: linear-gradient(90deg, #6793d0, #4fade7);">
+            emoji
+            <span class="ml-2 inline-block bg-white text-blue-600 rounded-full px-2 py-0.5 text-xs font-bold align-middle">
+                1
+            </span>
+        </a>
+        <a href='/bholacodecamp/tags/git'
+           class="inline-block px-4 py-1 rounded-full text-white text-sm font-semibold shadow hover:opacity-90 transition mb-2 mr-2"
+           style="background: linear-gradient(90deg, #6793d0, #4fade7);">
+            git
+            <span class="ml-2 inline-block bg-white text-blue-600 rounded-full px-2 py-0.5 text-xs font-bold align-middle">
+                1
+            </span>
+        </a>
+        <a href='/bholacodecamp/tags/gitlab'
+           class="inline-block px-4 py-1 rounded-full text-white text-sm font-semibold shadow hover:opacity-90 transition mb-2 mr-2"
+           style="background: linear-gradient(90deg, #6793d0, #4fade7);">
+            gitlab
+            <span class="ml-2 inline-block bg-white text-blue-600 rounded-full px-2 py-0.5 text-xs font-bold align-middle">
+                1
+            </span>
+        </a>
+        <a href='/bholacodecamp/tags/html'
+           class="inline-block px-4 py-1 rounded-full text-white text-sm font-semibold shadow hover:opacity-90 transition mb-2 mr-2"
+           style="background: linear-gradient(90deg, #6793d0, #4fade7);">
+            html
+            <span class="ml-2 inline-block bg-white text-blue-600 rounded-full px-2 py-0.5 text-xs font-bold align-middle">
+                1
+            </span>
+        </a>
+        <a href='/bholacodecamp/tags/markdown'
+           class="inline-block px-4 py-1 rounded-full text-white text-sm font-semibold shadow hover:opacity-90 transition mb-2 mr-2"
+           style="background: linear-gradient(90deg, #6793d0, #4fade7);">
+            markdown
+            <span class="ml-2 inline-block bg-white text-blue-600 rounded-full px-2 py-0.5 text-xs font-bold align-middle">
+                2
+            </span>
+        </a>
+        <a href='/bholacodecamp/tags/privacy'
+           class="inline-block px-4 py-1 rounded-full text-white text-sm font-semibold shadow hover:opacity-90 transition mb-2 mr-2"
+           style="background: linear-gradient(90deg, #6793d0, #4fade7);">
+            privacy
+            <span class="ml-2 inline-block bg-white text-blue-600 rounded-full px-2 py-0.5 text-xs font-bold align-middle">
+                38
+            </span>
+        </a>
+        <a href='/bholacodecamp/tags/shortcodes'
+           class="inline-block px-4 py-1 rounded-full text-white text-sm font-semibold shadow hover:opacity-90 transition mb-2 mr-2"
+           style="background: linear-gradient(90deg, #6793d0, #4fade7);">
+            shortcodes
+            <span class="ml-2 inline-block bg-white text-blue-600 rounded-full px-2 py-0.5 text-xs font-bold align-middle">
+                38
+            </span>
+        </a>
+        <a href='/bholacodecamp/tags/text'
+           class="inline-block px-4 py-1 rounded-full text-white text-sm font-semibold shadow hover:opacity-90 transition mb-2 mr-2"
+           style="background: linear-gradient(90deg, #6793d0, #4fade7);">
+            text
+            <span class="ml-2 inline-block bg-white text-blue-600 rounded-full px-2 py-0.5 text-xs font-bold align-middle">
+                1
+            </span>
+        </a>
+        <a href='/bholacodecamp/tags/themes'
+           class="inline-block px-4 py-1 rounded-full text-white text-sm font-semibold shadow hover:opacity-90 transition mb-2 mr-2"
+           style="background: linear-gradient(90deg, #6793d0, #4fade7);">
+            themes
+            <span class="ml-2 inline-block bg-white text-blue-600 rounded-full px-2 py-0.5 text-xs font-bold align-middle">
+                2
+            </span>
+        </a>
     </div>
 </div>
-
 
             </div>
         
@@ -541,20 +544,25 @@
                 
 <div class="bg-white panel w-full mb-3 dark:bg-warmgray-900">
     <p class="text-xl text-center text-gray-700 py-3 pl-3 dark:text-gray-300 font-bold">Categories</p>
-    <div class="panel-block p-2">
+    <div class="panel-block p-2 flex flex-wrap gap-2">
         
-        <a href='/bholacodecamp/categories/syntax'>
-            <span class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
-                syntax (1)
+        <a href='/bholacodecamp/categories/syntax'
+           class="inline-block px-4 py-1 rounded-full text-white text-sm font-semibold shadow hover:opacity-90 transition mb-2 mr-2"
+           style="background: linear-gradient(90deg, #6793d0, #4fade7);">
+            syntax
+            <span class="ml-2 inline-block bg-white text-blue-600 rounded-full px-2 py-0.5 text-xs font-bold align-middle">
+                1
             </span>
         </a>
         
-        <a href='/bholacodecamp/categories/themes'>
-            <span class="duration-100 inline-flex py-2 leading-4 mr-2 mb-2 content-center bg-gray-100 justify-center h-8 px-3 text-blue-500 hover:text-blue-900 dark:bg-warmgray-800">
-                themes (1)
+        <a href='/bholacodecamp/categories/themes'
+           class="inline-block px-4 py-1 rounded-full text-white text-sm font-semibold shadow hover:opacity-90 transition mb-2 mr-2"
+           style="background: linear-gradient(90deg, #6793d0, #4fade7);">
+            themes
+            <span class="ml-2 inline-block bg-white text-blue-600 rounded-full px-2 py-0.5 text-xs font-bold align-middle">
+                1
             </span>
         </a>
-        
     </div>
 </div>
 
@@ -632,6 +640,54 @@
                 </div>
             </div>
         </a>
+        <a href="/bholacodecamp/post/rich-content-copy-12/" class="">
+            <div
+                class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
+                <div class="px-2">
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">Rich Content</div>
+                    <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
+                        <span class="mr-2 bg-gray-950">Published On:</span>
+              10 Mar 2019
+              </span>
+                    </p>
+                </div>
+            </div>
+        </a>
+        <a href="/bholacodecamp/post/rich-content-copy-13/" class="">
+            <div
+                class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
+                <div class="px-2">
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">Rich Content</div>
+                    <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
+                        <span class="mr-2 bg-gray-950">Published On:</span>
+              10 Mar 2019
+              </span>
+                    </p>
+                </div>
+            </div>
+        </a>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+<div class="bg-white panel w-full mb-3 pb-5 dark:bg-warmgray-900">
+    <p class="text-xl text-center text-gray-700 py-5 dark:text-gray-300 font-bold">Ads</p>
+    <div class="mx-6">
+        
+    </div>
+</div>
+
+
+<div class="bg-white panel w-full mb-3 pb-5 dark:bg-warmgray-900">
+    <p class="text-xl text-center text-gray-700 py-5 dark:text-gray-300 font-bold">Affiliate Links</p>
+    <div class="mx-6">
+        
     </div>
 </div>
 
@@ -649,8 +705,9 @@
   <div class="container max-w-screen-xl mr-auto ml-auto">
     <p>&copy; 2025 <a href="https://rajeshbhola.github.io/bholacodecamp/" class="duration-200 hover:opacity-50">bholaCodeCamp</a>
     </p>
-    <p>Developed by <a href="https://rajeshbhola.github.io/" class="duration-200 hover:opacity-50">Rajesh Bhola</a> | <a
-        href="https://github.com/" class="duration-200 hover:opacity-50">privacy policy</a></p>
+    <p>Developed by <a href="https://rajeshbhola.github.io/" class="duration-200 hover:opacity-50">Rajesh Bhola</a> | <a href="/bholacodecamp/privacy-policy/" class="duration-200 hover:opacity-50">Privacy Policy</a> |
+      <a href="/bholacodecamp/terms-of-service/" class="duration-200 hover:opacity-50">Terms of Service</a>
+      </p>
   </div>
   
   <script>
