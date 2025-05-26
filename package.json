@@ -2,7 +2,7 @@
   "name": "bholacodecamp",
   "version": "1.0.0",
   "scripts": {
-    "build:css": "postcss assets/css/style.css -o assets/css/output.css"
+    "build:css": "postcss themes/Blonde/assets/css/style.css -o themes/Blonde/assets/css/output.css"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4.1.5",
