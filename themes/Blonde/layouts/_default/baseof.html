@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+{{ if eq .Site.Params.darkmode "dark" }}
+<html lang="{{ .Site.LanguageCode | default .Site.Language.Lang }}" class="dark">
+{{ else }}
+<html lang="{{ .Site.LanguageCode | default .Site.Language.Lang }}">
+{{ end }}
+{{- partial "head.html" . -}}
+
+<body class="font-sans">
+    <div class="min-h-screen flex flex-col bg-gray-100 dark:bg-warmgray-800">
+        {{- partial "header.html" . -}}
+        <div class="container max-w-screen-xl mx-auto mt-4 flex-grow px-5 lg:px-0" id="content">
+            <div class="lg:mx-5">
+            {{- block "main" . }}{{- end }}
+            </div>
+        </div>
+        {{- partial "footer.html" . -}}
+        <button id="scrollToTopBtn" title="Go to top">⬆️</button>
+
+        <script>
+            const btn = document.getElementById("scrollToTopBtn");
+          https://img.icons8.com/?size=100&id=26192&format=png&color=000000
+            window.onscroll = function () {
+              if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                btn.style.display = "block";
+              } else {
+                btn.style.display = "none";
+              }
+            };
+          
+            btn.addEventListener("click", function () {
+              window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+          </script>
+          
+    </div>
+</body>
+
+</html>

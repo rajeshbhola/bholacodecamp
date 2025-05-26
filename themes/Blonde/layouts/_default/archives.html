@@ -1,0 +1,33 @@
+{{ define "main" }}
+<div class="bg-gray-50 text-gray-900 py-20 px-6 max-w-4xl mx-auto text-center">
+    
+  <h1 class="text-4xl font-extrabold mb-2 dark:text-white"><i class="fa fa-archive mr-1"></i>Archives</h1>
+  <p class="text-lg dark:text-white mb-12">
+    Browse posts by date and discover our history.
+  </p><br><br>
+
+  {{ $posts := .Site.RegularPages }}
+  {{ $grouped := $posts.GroupByDate "2006" }}
+  <div class="space-y-12">
+    {{ range $year := $grouped }}
+      <div>
+        <h2 class="text-4xl font-bold border-b dark:text-white border-gray-200 pb-3 text-center">{{ $year.Key }}</h2>
+        <ul class="mt-6 space-y-4 mb-4">
+          {{ $months := $year.Pages.GroupByDate "January" }}
+          {{ range $month := $months }}<br>
+            <li class="font-semibold dark:text-white text-center">{{ $month.Key }}</li>
+            {{ range $month.Pages }}
+              <li class="text-base text-gray-700 hover:text-gray-900 transition cursor-pointer text-center">
+                <a href="{{ .RelPermalink }}" class="text-blue-500 hover:underline font-medium">
+                  {{ .Title }}
+                </a>
+                <span class="dark:text-white text-sm ml-2"> {{ .Date | time.Format "02 Jan 2006" }}</span>
+              </li>
+            {{ end }}
+          {{ end }}
+        </ul><br>
+      </div>
+    {{ end }}
+  </div>
+</div>
+{{ end }}

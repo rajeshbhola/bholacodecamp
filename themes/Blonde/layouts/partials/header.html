@@ -1,0 +1,60 @@
+<!-- Add Font Awesome CDN in your head.html if not already present:
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+-->
+<div class="{{ .Site.Params.base_color }}">
+    <div class="container max-w-screen-l mr-auto ml-auto">
+        <nav class="flex items-center justify-between flex-wrap {{ .Site.Params.base_color }} px-6">
+
+            <a href="{{ .Site.BaseURL }}" class="header flex items-center no-underline text-white mr-6" aria-label="Logo">
+                <img class="logo-img" src="{{ "img/logo.webp" | relURL }}" alt="{{ .Site.Title }} logo" width="90" loading="lazy">
+                <span class="sm:inline font-semibold text-2xl tracking-tight text-white text-logo font-jaturat">{{ .Site.Title }}</span>
+            </a>
+
+            <div class="flex md:hidden">
+                <div class="py-2">
+                    <button onclick="toggleDarkMode()" class="focus:outline-none mr-1" aria-label="Darkmode Toggle Button"><i id="icon"
+                            class="icon-moon inline-flex align-middle leading-normal text-lg text-white"></i></button>
+                    <span class="text-white">|</span>
+                </div>
+                <button id="hamburgerbtn" class="flex items-center px-3 py-1 text-white hover:opacity-50" aria-label="Hamburger Button">
+                    <span class="icon-menu text-2xl"></span>
+                </button>
+            </div>
+            <div class="hidden w-full md:flex md:flex-row sm:items-center md:w-auto" id="mobileMenu">
+                <div class="text-sm lg:flex-grow">
+                </div>
+                <div class="navmenu">
+                    {{ range .Site.Menus.main }}
+                    <a href="{{ .URL }}"
+                        class="no-underline duration-200 block mt-4 sm:inline-block sm:mt-0 text-white hover:opacity-50 mr-4">
+                        {{ if eq .Identifier "home" }}<i class="fa fa-home mr-1"></i>{{ end }}
+                        {{ if eq .Identifier "about" }}<i class="fa fa-user mr-1"></i>{{ end }}
+                        {{ if eq .Identifier "contact" }}<i class="fa fa-envelope mr-1"></i>{{ end }}
+                        {{ if eq .Identifier "archives" }}<i class="fa fa-archive mr-1"></i>{{ end }}
+
+                        {{ .Name }}
+                    </a>
+                    {{ end }}
+                </div>
+                <div class="text-white invisible md:visible">
+                    <span>|</span>
+                    <button onclick="toggleDarkMode()" class="focus-visible:outline-none" aria-label="Darkmode Toggle Button"><i id="icon2"
+                            class="icon-moon hover:opacity-50 duration-200 inline-flex align-middle leading-normal text-lg ml-2"></i></button>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+<style>
+    .active {
+        display: block;
+    }
+</style>
+
+<script>
+    let hamburger = document.getElementById('hamburgerbtn');
+    let mobileMenu = document.getElementById('mobileMenu');
+    hamburger.addEventListener('click', function () {
+        mobileMenu.classList.toggle('active');
+    });
+</script>

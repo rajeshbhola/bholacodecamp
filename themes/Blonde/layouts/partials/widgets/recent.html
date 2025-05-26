@@ -1,0 +1,46 @@
+{{ $recent := where .Site.RegularPages "Type" "in" site.Params.mainSections }}
+{{ $recent_num := (7 | default 10) }}
+{{- if $recent }}
+<div class="bg-white panel w-full mb-3 pb-5 dark:bg-warmgray-900">
+    <p class="text-xl text-center text-gray-700 py-5 dark:text-gray-300 font-bold"><span style="font-size: 25px;">✍️</span>Recent Posts</p>
+    <div class="mx-6">
+        {{- range first $recent_num $recent }}
+        <a href="{{ .RelPermalink }}" class="">
+            <div
+                class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
+                <div class="px-2">
+                    <div class="text-gray-900 font-bold dark:text-white">{{.Title}}</div>
+                    <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
+                        <span class="mr-2 bg-gray-950">Published On:</span>
+              {{ .Date | time.Format "02 Jan 2006" }}
+              </span>
+                    </p>
+                </div>
+            </div>
+        </a>
+        {{- end }}
+    </div>
+</div>
+{{- end }}
+
+
+
+
+
+
+
+<!--Google Ads-->
+<div class="bg-white panel w-full mb-3 pb-5 dark:bg-warmgray-900">
+    <p class="text-xl text-center text-gray-700 py-5 dark:text-gray-300 font-bold">Ads</p>
+    <div class="mx-6">
+        
+    </div>
+</div>
+
+<!--Affiliate Links-->
+<div class="bg-white panel w-full mb-3 pb-5 dark:bg-warmgray-900">
+    <p class="text-xl text-center text-gray-700 py-5 dark:text-gray-300 font-bold">Affiliate Links</p>
+    <div class="mx-6">
+        
+    </div>
+</div>
