@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>May 2025 on bholaCodeCamp</title><link>https://rajeshbhola.github.io/bholacodecamp/archives/may-2025/</link><description>Recent content in May 2025 on bholaCodeCamp</description><generator>Hugo</generator><language>en</language><lastBuildDate>Mon, 19 May 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://rajeshbhola.github.io/bholacodecamp/archives/may-2025/index.xml" rel="self" type="application/rss+xml"/><item><title>How to Clone Your Company's Project Repository</title><link>https://rajeshbhola.github.io/bholacodecamp/post/rich-content-copy-2/</link><pubDate>Mon, 19 May 2025 00:00:00 +0000</pubDate><guid>https://rajeshbhola.github.io/bholacodecamp/post/rich-content-copy-2/</guid><description>&lt;h2>Introduction&lt;/h2>
+ &lt;p>When joining a new team or starting a new role, one of your first tasks might be to clone the company’s codebase so you can start contributing. This article walks you through the &lt;strong>process of cloning a private Git/GitLab repository&lt;/strong> used in a professional environment — securely and correctly.&lt;/p>
+
+ &lt;h2>🔐 Prerequisites:&lt;/h2>
+ &lt;p>Before you can clone the repo, make sure you have:&lt;/p>
+ &lt;ul>
+ &lt;li>&lt;strong>Access permissions&lt;/strong> to the repository (usually granted by an admin or team lead).&lt;/li>
+ &lt;li>A &lt;strong>GitLab or GitHub account&lt;/strong> with access to the organization/project.&lt;/li>
+ &lt;li>Git installed on your machine (&lt;code>git --version&lt;/code> should return a version number).&lt;/li>
+ &lt;li>SSH key added to your Git provider (recommended for secure authentication).&lt;/li>
+ &lt;/ul>
+
+ &lt;h2>✅ Step-by-Step to Cloning a Repo&lt;/h2>
+
+ &lt;h3>1. Get the Repository URL&lt;/h3>
+ &lt;p>Log into your company's Git platform (e.g., GitLab, GitHub, Bitbucket). Navigate to the project repository and copy the &lt;strong>SSH or HTTPS clone URL&lt;/strong>.&lt;/p></description></item></channel></rss>
