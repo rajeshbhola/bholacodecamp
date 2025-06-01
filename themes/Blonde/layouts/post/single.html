@@ -52,13 +52,13 @@
       style="object-fit: cover;"
     />
     <span class="ml-2 text-base">
-      <a href="/bholacodecamp/about/" style="color: rgb(109, 174, 232);">{{ .Params.author }}</a>
+      <a href="/bholacodecamp/about/" class="bhola-style">{{ .Params.author }}</a>
     </span>
   </div>
   <!-- Right: Published On -->
   <div class="text-base text-gray-600 dark:text-gray-300">
     <span>Published On:</span>
-    <span style="color: rgb(109, 174, 232);">{{ .Date | time.Format "02 Jan 2006" }}</span>
+    <span class="bhola-style">{{ .Date | time.Format "02 Jan 2006" }}</span>
   </div>
 </div>
 
