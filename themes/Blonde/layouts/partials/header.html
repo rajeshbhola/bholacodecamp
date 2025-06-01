@@ -5,7 +5,7 @@
     <div class="container max-w-screen-l mr-auto ml-auto">
         <nav class="flex items-center justify-between flex-wrap {{ .Site.Params.base_color }} px-6">
 
-            <a href="{{ .Site.BaseURL }}" class="header flex items-center no-underline text-white mr-6" aria-label="Logo">
+            <a href="{{ .Site.BaseURL }}" class="header flex items-center no-underline text-white mr-6 " aria-label="Logo">
                 <img class="logo-img" src="{{ "img/logo.webp" | relURL }}" alt="{{ .Site.Title }} logo" width="90" loading="lazy">
                 <span class="sm:inline font-semibold text-2xl tracking-tight text-white text-logo font-jaturat">{{ .Site.Title }}</span>
             </a>
@@ -20,6 +20,7 @@
                     <span class="icon-menu text-2xl"></span>
                 </button>
             </div>
+
             <div class="hidden w-full md:flex md:flex-row sm:items-center md:w-auto" id="mobileMenu">
                 <div class="text-sm lg:flex-grow">
                 </div>
@@ -42,6 +43,7 @@
                             class="icon-moon hover:opacity-50 duration-200 inline-flex align-middle leading-normal text-lg ml-2"></i></button>
                 </div>
             </div>
+
         </nav>
     </div>
 </div>

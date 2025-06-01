@@ -80,7 +80,7 @@
         </script>
         {{ end }}
 
-        <div class="prose md:prose-lg lg:prose-xl max-w-none dark:prose-invert mt-5">{{.Content}}</div>
+        <div class="prose md:prose-lg lg:prose max-w-none dark:prose-invert mt-5">{{.Content}}</div>
 
         {{ if and (and (.Site.Params.ad.googleAdSense) (.Site.Params.ad.postBottom)) (.Site.Params.ad.adslot) }}
         <ins class="adsbygoogle" style="display:block" data-ad-client="{{.Site.Params.ad.googleAdSense}}"
@@ -96,7 +96,7 @@
           <div id="categories">
             <span class="text-xl mr-1">📚</span>
             {{ range . }}
-            <a href='{{ "tags/" | absURL }}{{ . | urlize }}'
+            <a href='{{ "categories/" | absURL }}{{ . | urlize }}'
           class="inline-block px-4 py-1 rounded  text-white text-sm font-semibold shadow transition mb-2 mr-2"
           style="background: linear-gradient(90deg, #6793d0, #4fade7);">{{ . }}</a></span>
             {{ end }}
@@ -108,7 +108,7 @@
         <div class="grid grid-cols-2">
           <div class="col-span-1">
             {{ with .PrevInSection }}
-            <a class="previous lg:text-2xl" href="{{.Permalink}}">
+            <a class="previous lg:text-xl" href="{{.Permalink}}">
               <div
                 class="transition-colors duration-300  h-auto m-3 text-center py-3 lg:py-1
                 text-hover:text-blue-500 hover:bg-gray-100 dark:hover:bg-warmgray-800">
@@ -118,7 +118,7 @@
             {{ end }}
           </div>
           {{ with .NextInSection }}
-          <a class="next lg:text-2xl" href="{{.Permalink}}">
+          <a class="next lg:text-xl" href="{{.Permalink}}">
             <div
               class="transition-colors duration-300 col-span-1  h-auto m-3 text-center py-3 lg:py-1
               text-hover:text-blue-500 hover:bg-gray-100 dark:hover:bg-warmgray-800">
@@ -136,3 +136,4 @@
   </div>
 </div>
 {{ end }}
+
