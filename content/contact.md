@@ -22,7 +22,7 @@ date: "25 May 2025"
     </div>
     <div class="contact-card">
       <div class="contact-icon"><i class="fab fa-youtube"></i> YouTube</div>
-      <div class="contact-info"><a href="https://youtube.com/@rajeshbhola" target="_blank">@bholarajesh</a></div>
+      <div class="contact-info"><a href="https://youtube.com/@bholacodecamp" target="_blank">@bholarajesh</a></div>
     </div>
     <div class="contact-card">
       <div class="contact-icon"><i class="fa-solid fa-location-dot"></i> Location</div>
