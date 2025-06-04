@@ -2608,4 +2608,6 @@ img.py-4.rounded-lg.max-w-full.h-auto.mx-auto {
   border-radius: 4px;
 }
 
-
+a.box {
+  border-radius: 5px;
+}

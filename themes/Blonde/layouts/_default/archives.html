@@ -11,7 +11,7 @@
   <div class="space-y-12">
     {{ range $year := $grouped }}
       <div>
-        <h2 style="font-size: 2.25rem; font-weight: bold; text-align: center; padding-bottom: 0.75rem; border-bottom: 4px solid transparent; background-image: linear-gradient(to right, rgb(2, 23, 62), rgb(111, 111, 241)); -webkit-background-clip: text; color: transparent; text-shadow: 0 4px 0 #2289ce;">
+        <h2 style="font-size: 2.25rem;font-weight: bold;text-align: center;background: linear-gradient(90deg, #6793d0 0%, #4fade7 100%);color: white;border-radius: 10px;">
           {{ $year.Key }}
         </h2>
 
@@ -38,3 +38,4 @@
   </div>
 </div>
 {{ end }}
+
